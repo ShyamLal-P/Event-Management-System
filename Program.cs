@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using EventManagementSystem.Interface;
 using EventManagementSystem.Repository;
 using EventManagementSystem.Data;
+using EventManagementSystem.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +24,7 @@ builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 builder.Services.AddScoped<ITicketRepository, TicketRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
-//builder.Services.AddScoped<IBookingService, BookingService>();
+builder.Services.AddScoped<ITicketBookingService, TicketBookingService>();
 //builder.Services.AddScoped<ICancellationService, CancellationService>();
 //builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();

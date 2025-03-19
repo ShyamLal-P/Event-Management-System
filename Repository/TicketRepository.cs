@@ -30,6 +30,12 @@ namespace EventManagementSystem.Repository
             _context.Tickets.Add(ticketItem);
             await _context.SaveChangesAsync();
         }
+        public async Task<IEnumerable<Ticket>> GetTicketsByUserAndEventAsync(Guid userId, Guid eventId)
+        {
+            return await _context.Tickets
+                .Where(t => t.UserId == userId.ToString() && t.EventId == eventId)
+                .ToListAsync();
+        }
 
         public async Task UpdateTicketAsync(Ticket ticketItem)
         {

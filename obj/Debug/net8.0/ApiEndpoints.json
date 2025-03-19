@@ -32,6 +32,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventManagementSystem.Controllers.BookingController",
+    "Method": "BookTickets",
+    "RelativePath": "api/Booking/BookTickets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "eventId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "numberOfTickets",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventManagementSystem.Controllers.EventController",
     "Method": "GetEvents",
     "RelativePath": "api/Event",
