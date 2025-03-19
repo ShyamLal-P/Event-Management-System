@@ -19,11 +19,10 @@ builder.Services.AddDbContext<EventManagementSystemDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Register repositories
-//builder.Services.AddScoped<IUserRepository, UserRepository>();
-//builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
-//builder.Services.AddScoped<ITicketRepository, TicketRepository>();
-//builder.Services.AddScoped<IEventRepository, EventRepository>();
-//builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
+builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
+builder.Services.AddScoped<ITicketRepository, TicketRepository>();
+builder.Services.AddScoped<IEventRepository, EventRepository>();
+builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
 //builder.Services.AddScoped<IBookingService, BookingService>();
 //builder.Services.AddScoped<ICancellationService, CancellationService>();
 //builder.Services.AddScoped<INotificationService, NotificationService>();

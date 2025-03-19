@@ -7,6 +7,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using EventManagementSystem.Interface;
 
 namespace EventManagementSystem.Controllers
 {
@@ -14,11 +15,11 @@ namespace EventManagementSystem.Controllers
     [ApiController]
     public class TicketController : ControllerBase
     {
-        private readonly EventManagementSystemDbContext _context;
+        private readonly ITicketRepository _ticketRepository;
 
-        public TicketController(EventManagementSystemDbContext context)
+        public TicketController(ITicketRepository ticketRepository)
         {
-            _context = context;
+            _ticketRepository = ticketRepository;
         }
 
         // GET: api/Ticket
@@ -26,31 +27,27 @@ namespace EventManagementSystem.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Ticket>>> GetTickets()
         {
-            return await _context.Tickets.ToListAsync();
+            var tickets = await _ticketRepository.GetAllTicketsAsync();
+            return Ok(tickets);
         }
 
         // GET: api/Ticket/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Ticket>> GetTicket(Guid id)
         {
-            var ticketItem = await _context.Tickets.FindAsync(id);
-
+            var ticketItem = await _ticketRepository.GetTicketByIdAsync(id);
             if (ticketItem == null)
             {
                 return NotFound();
             }
-
-            return ticketItem;
+            return Ok(ticketItem);
         }
 
         // POST: api/Ticket
         [HttpPost]
         public async Task<ActionResult<Ticket>> PostTicket(Ticket ticketItem)
         {
-            ticketItem.Id = Guid.NewGuid();
-            _context.Tickets.Add(ticketItem);
-            await _context.SaveChangesAsync();
-
+            await _ticketRepository.AddTicketAsync(ticketItem);
             return CreatedAtAction(nameof(GetTicket), new { id = ticketItem.Id }, ticketItem);
         }
 
@@ -63,35 +60,12 @@ namespace EventManagementSystem.Controllers
                 return BadRequest("Ticket ID mismatch.");
             }
 
-            var existingTicket = await _context.Tickets.FindAsync(id);
-            if (existingTicket == null)
+            if (!_ticketRepository.TicketExists(id))
             {
                 return NotFound();
             }
 
-            existingTicket.EventId = ticketItem.EventId;
-            existingTicket.UserId = ticketItem.UserId;
-            existingTicket.BookingDate = ticketItem.BookingDate;
-            existingTicket.Status = ticketItem.Status;
-
-            _context.Entry(existingTicket).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!TicketExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            await _ticketRepository.UpdateTicketAsync(ticketItem);
             return NoContent();
         }
 
@@ -99,21 +73,13 @@ namespace EventManagementSystem.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTicket(Guid id)
         {
-            var ticketItem = await _context.Tickets.FindAsync(id);
-            if (ticketItem == null)
+            if (!_ticketRepository.TicketExists(id))
             {
                 return NotFound();
             }
 
-            _context.Tickets.Remove(ticketItem);
-            await _context.SaveChangesAsync();
-
+            await _ticketRepository.DeleteTicketAsync(id);
             return NoContent();
-        }
-
-        private bool TicketExists(Guid id)
-        {
-            return _context.Tickets.Any(t => t.Id == id);
         }
     }
 }

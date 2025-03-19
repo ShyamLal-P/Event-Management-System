@@ -32,9 +32,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EventManagementSystem.Controllers.EventsController",
+    "ContainingType": "EventManagementSystem.Controllers.EventController",
     "Method": "GetEvents",
-    "RelativePath": "api/Events",
+    "RelativePath": "api/Event",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -52,9 +52,9 @@
     ]
   },
   {
-    "ContainingType": "EventManagementSystem.Controllers.EventsController",
+    "ContainingType": "EventManagementSystem.Controllers.EventController",
     "Method": "PostEvent",
-    "RelativePath": "api/Events",
+    "RelativePath": "api/Event",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -78,9 +78,9 @@
     ]
   },
   {
-    "ContainingType": "EventManagementSystem.Controllers.EventsController",
+    "ContainingType": "EventManagementSystem.Controllers.EventController",
     "Method": "GetEvent",
-    "RelativePath": "api/Events/{id}",
+    "RelativePath": "api/Event/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -104,9 +104,9 @@
     ]
   },
   {
-    "ContainingType": "EventManagementSystem.Controllers.EventsController",
+    "ContainingType": "EventManagementSystem.Controllers.EventController",
     "Method": "UpdateEvent",
-    "RelativePath": "api/Events/{id}",
+    "RelativePath": "api/Event/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -125,9 +125,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EventManagementSystem.Controllers.EventsController",
+    "ContainingType": "EventManagementSystem.Controllers.EventController",
     "Method": "DeleteEvent",
-    "RelativePath": "api/Events/{id}",
+    "RelativePath": "api/Event/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

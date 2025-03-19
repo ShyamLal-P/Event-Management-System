@@ -7,6 +7,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using EventManagementSystem.Interface;
 
 namespace EventManagementSystem.Controllers
 {
@@ -14,11 +15,11 @@ namespace EventManagementSystem.Controllers
     [ApiController]
     public class NotificationController : ControllerBase
     {
-        private readonly EventManagementSystemDbContext _context;
+        private readonly INotificationRepository _notificationRepository;
 
-        public NotificationController(EventManagementSystemDbContext context)
+        public NotificationController(INotificationRepository notificationRepository)
         {
-            _context = context;
+            _notificationRepository = notificationRepository;
         }
 
         // GET: api/Notification
@@ -26,31 +27,27 @@ namespace EventManagementSystem.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Notification>>> GetNotifications()
         {
-            return await _context.Notifications.ToListAsync();
+            var notifications = await _notificationRepository.GetAllNotificationsAsync();
+            return Ok(notifications);
         }
 
         // GET: api/Notification/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Notification>> GetNotification(Guid id)
         {
-            var notificationItem = await _context.Notifications.FindAsync(id);
-
+            var notificationItem = await _notificationRepository.GetNotificationByIdAsync(id);
             if (notificationItem == null)
             {
                 return NotFound();
             }
-
-            return notificationItem;
+            return Ok(notificationItem);
         }
 
         // POST: api/Notification
         [HttpPost]
         public async Task<ActionResult<Notification>> PostNotification(Notification notificationItem)
         {
-            notificationItem.Id = Guid.NewGuid();
-            _context.Notifications.Add(notificationItem);
-            await _context.SaveChangesAsync();
-
+            await _notificationRepository.AddNotificationAsync(notificationItem);
             return CreatedAtAction(nameof(GetNotification), new { id = notificationItem.Id }, notificationItem);
         }
 
@@ -63,54 +60,25 @@ namespace EventManagementSystem.Controllers
                 return BadRequest("Notification ID mismatch.");
             }
 
-            var existingNotification = await _context.Notifications.FindAsync(id);
-            if (existingNotification == null)
+            if (!_notificationRepository.NotificationExists(id))
             {
                 return NotFound();
             }
 
-            existingNotification.Message = notificationItem.Message;
-            existingNotification.SentTime = notificationItem.SentTime;
-
-            _context.Entry(existingNotification).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!NotificationExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            await _notificationRepository.UpdateNotificationAsync(notificationItem);
             return NoContent();
-        }
-
-        private bool NotificationExists(Guid id)
-        {
-            return _context.Notifications.Any(n => n.Id == id);
         }
 
         // DELETE: api/Notification/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteNotification(Guid id)
         {
-            var notificationItem = await _context.Notifications.FindAsync(id);
-            if (notificationItem == null)
+            if (!_notificationRepository.NotificationExists(id))
             {
                 return NotFound();
             }
 
-            _context.Notifications.Remove(notificationItem);
-            await _context.SaveChangesAsync();
-
+            await _notificationRepository.DeleteNotificationAsync(id);
             return NoContent();
         }
     }
