@@ -16,9 +16,25 @@ namespace EventManagementSystem.Services
         public async Task<bool> CancelTicketsAsync(Guid userId, Guid eventId, int numberOfTickets)
         {
             var eventItem = await _eventRepository.GetEventByIdAsync(eventId);
-            if (eventItem == null || eventItem.Date < DateOnly.FromDateTime(DateTime.Now))
+            if (eventItem == null)
             {
-                return false; // Event not found or event date is in the past
+                return false; // Event not found
+            }
+
+            var currentDate = DateOnly.FromDateTime(DateTime.Now);
+            var currentTime = TimeOnly.FromDateTime(DateTime.Now);
+
+            // Check if the event has already finished
+            if (eventItem.Date < currentDate || (eventItem.Date == currentDate && eventItem.Time < currentTime))
+            {
+                return false; // Event has already finished
+            }
+
+            // Check if the event is scheduled to start within the next 24 hours
+            var eventDateTime = eventItem.Date.ToDateTime(eventItem.Time);
+            if (eventDateTime <= DateTime.Now.AddHours(24))
+            {
+                return false; // Event is scheduled to start within the next 24 hours
             }
 
             var userTickets = await _ticketRepository.GetTicketsByUserAndEventAsync(userId, eventId);
