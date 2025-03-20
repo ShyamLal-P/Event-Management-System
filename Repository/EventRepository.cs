@@ -51,5 +51,11 @@ namespace EventManagementSystem.Repository
         {
             return _context.Events.Any(e => e.Id == id);
         }
+
+        public void SetTotalTickets(Event eventEntity, int totalTickets)
+        {
+            eventEntity.SetTotalTickets(totalTickets);
+        }
     }
 }
+

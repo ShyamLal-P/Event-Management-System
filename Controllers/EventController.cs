@@ -47,6 +47,7 @@ namespace EventManagementSystem.Controllers
         [HttpPost]
         public async Task<ActionResult<Event>> PostEvent(Event eventItem)
         {
+            eventItem.SetTotalTickets(eventItem.TotalTickets); // Ensure NoOfTickets is set
             await _eventRepository.AddEventAsync(eventItem);
             return CreatedAtAction(nameof(GetEvent), new { id = eventItem.Id }, eventItem);
         }
@@ -65,6 +66,7 @@ namespace EventManagementSystem.Controllers
                 return NotFound();
             }
 
+            eventItem.SetTotalTickets(eventItem.TotalTickets); // Ensure NoOfTickets is set
             await _eventRepository.UpdateEventAsync(eventItem);
             return NoContent();
         }

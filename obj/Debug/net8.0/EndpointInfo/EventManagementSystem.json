@@ -959,6 +959,10 @@
             "type": "string",
             "format": "time"
           },
+          "totalTickets": {
+            "type": "integer",
+            "format": "int32"
+          },
           "noOfTickets": {
             "type": "integer",
             "format": "int32"
