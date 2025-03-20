@@ -520,6 +520,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventManagementSystem.Controllers.TicketCancellationController",
+    "Method": "CancelTickets",
+    "RelativePath": "api/TicketCancellation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "eventId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "numberOfTickets",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventManagementSystem.Controllers.TotalTicketsBookedController",
     "Method": "GetTotalTicketsBooked",
     "RelativePath": "api/TotalTicketsBooked/{eventId}",

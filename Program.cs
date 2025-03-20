@@ -25,7 +25,7 @@ builder.Services.AddScoped<ITicketRepository, TicketRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
 builder.Services.AddScoped<ITicketBookingService, TicketBookingService>();
-//builder.Services.AddScoped<ICancellationService, CancellationService>();
+builder.Services.AddScoped<ITicketCancellationService, TicketCancellationService>();
 //builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IRemainingTicketsService, RemainingTicketsService>();
