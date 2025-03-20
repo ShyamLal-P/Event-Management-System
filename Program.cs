@@ -28,7 +28,7 @@ builder.Services.AddScoped<ITicketBookingService, TicketBookingService>();
 //builder.Services.AddScoped<ICancellationService, CancellationService>();
 //builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
-
+builder.Services.AddScoped<IRemainingTicketsService, RemainingTicketsService>();
 
 //this block of code is added fter updating the db with new database of the authorization roles 
 builder.Services.AddIdentityCore<IdentityUser>()

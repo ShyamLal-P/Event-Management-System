@@ -385,6 +385,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventManagementSystem.Controllers.RemainingTicketsController",
+    "Method": "GetNoOfTickets",
+    "RelativePath": "api/RemainingTickets/{eventId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "EventManagementSystem.Controllers.TicketController",
     "Method": "GetTickets",
     "RelativePath": "api/Ticket",
