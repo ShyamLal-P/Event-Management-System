@@ -1,4 +1,5 @@
 ﻿using EventManagementSystem.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventManagementSystem.Controllers
@@ -15,6 +16,7 @@ namespace EventManagementSystem.Controllers
         }
 
         // GET: api/TotalTicketsBooked/{eventId}
+        [Authorize(Roles = "Admin")]
         [HttpGet("{eventId}")]
         public async Task<ActionResult<int>> GetTotalTicketsBooked(Guid eventId)
         {

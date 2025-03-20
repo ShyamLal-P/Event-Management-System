@@ -1,4 +1,5 @@
 ﻿using EventManagementSystem.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventManagementSystem.Controllers
@@ -15,6 +16,7 @@ namespace EventManagementSystem.Controllers
         }
 
         // POST: api/TicketCancellation
+        [Authorize(Roles = "Admin, User")]
         [HttpPost]
         public async Task<IActionResult> CancelTickets(Guid userId, Guid eventId, int numberOfTickets)
         {
