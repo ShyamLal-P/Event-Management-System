@@ -18,13 +18,13 @@ namespace EventManagementSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> CancelTickets(Guid userId, Guid eventId, int numberOfTickets)
         {
-            var result = await _ticketCancellationService.CancelTicketsAsync(userId, eventId, numberOfTickets);
-            if (result)
+            var (success, message) = await _ticketCancellationService.CancelTicketsAsync(userId, eventId, numberOfTickets);
+            if (success)
             {
                 var refundAmount = await _ticketCancellationService.CalculateRefundAmountAsync(eventId, numberOfTickets);
-                return Ok(new { message = "Tickets cancelled successfully.", refundAmount });
+                return Ok(new { message, refundAmount });
             }
-            return BadRequest("Unable to cancel tickets.");
+            return BadRequest(new { message });
         }
     }
 }

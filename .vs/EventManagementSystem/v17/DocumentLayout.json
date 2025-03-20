@@ -192,7 +192,7 @@
               "RelativeDocumentMoniker": "Controllers\\TicketCancellationController.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\TicketCancellationController.cs",
               "RelativeToolTip": "Controllers\\TicketCancellationController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAcwBwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wBwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T04:21:36.31Z",
               "EditorCaption": ""
@@ -205,7 +205,7 @@
               "RelativeDocumentMoniker": "Services\\TicketCancellationService.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\TicketCancellationService.cs",
               "RelativeToolTip": "Services\\TicketCancellationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T04:20:45.817Z",
               "EditorCaption": ""
@@ -233,8 +233,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T04:39:11.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T04:39:11.79Z"
             },
             {
               "$type": "Document",
@@ -246,8 +245,7 @@
               "RelativeToolTip": "Interface\\ITicketRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:57:44.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T11:57:44.973Z"
             },
             {
               "$type": "Document",

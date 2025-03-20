@@ -13,12 +13,12 @@ namespace EventManagementSystem.Services
             _ticketRepository = ticketRepository;
         }
 
-        public async Task<bool> CancelTicketsAsync(Guid userId, Guid eventId, int numberOfTickets)
+        public async Task<(bool Success, string Message)> CancelTicketsAsync(Guid userId, Guid eventId, int numberOfTickets)
         {
             var eventItem = await _eventRepository.GetEventByIdAsync(eventId);
             if (eventItem == null)
             {
-                return false; // Event not found
+                return (false, "Event not found.");
             }
 
             var currentDate = DateOnly.FromDateTime(DateTime.Now);
@@ -27,14 +27,15 @@ namespace EventManagementSystem.Services
             // Check if the event has already finished
             if (eventItem.Date < currentDate || (eventItem.Date == currentDate && eventItem.Time < currentTime))
             {
-                return false; // Event has already finished
+                return (false, "This event has already finished, so ticket cancellation is not possible.");
             }
 
             // Check if the event is scheduled to start within the next 24 hours
             var eventDateTime = eventItem.Date.ToDateTime(eventItem.Time);
-            if (eventDateTime <= DateTime.Now.AddHours(24))
+            var timeUntilEvent = eventDateTime - DateTime.Now;
+            if (timeUntilEvent <= TimeSpan.FromHours(24))
             {
-                return false; // Event is scheduled to start within the next 24 hours
+                return (false, $"The event is going to start in {timeUntilEvent.Hours} hours, so ticket cancellation is not possible.");
             }
 
             var userTickets = await _ticketRepository.GetTicketsByUserAndEventAsync(userId, eventId);
@@ -42,7 +43,7 @@ namespace EventManagementSystem.Services
 
             if (ticketsToCancel.Count < numberOfTickets)
             {
-                return false; // Not enough tickets to cancel
+                return (false, "Not enough tickets to cancel.");
             }
 
             foreach (var ticket in ticketsToCancel)
@@ -54,7 +55,7 @@ namespace EventManagementSystem.Services
             eventItem.NoOfTickets += numberOfTickets; // Update the number of available tickets
             await _eventRepository.UpdateEventAsync(eventItem);
 
-            return true;
+            return (true, "Tickets cancelled successfully.");
         }
 
         public async Task<double> CalculateRefundAmountAsync(Guid eventId, int numberOfTickets)
