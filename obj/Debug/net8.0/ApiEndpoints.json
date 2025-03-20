@@ -518,5 +518,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementSystem.Controllers.TotalTicketsBookedController",
+    "Method": "GetTotalTicketsBooked",
+    "RelativePath": "api/TotalTicketsBooked/{eventId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
