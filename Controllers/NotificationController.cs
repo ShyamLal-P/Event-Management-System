@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using EventManagementSystem.Interface;
+using EventManagementSystem.Services;
 
 namespace EventManagementSystem.Controllers
 {
@@ -16,10 +17,12 @@ namespace EventManagementSystem.Controllers
     public class NotificationController : ControllerBase
     {
         private readonly INotificationRepository _notificationRepository;
+        private readonly INotificationService _notificationService;
 
-        public NotificationController(INotificationRepository notificationRepository)
+        public NotificationController(INotificationRepository notificationRepository, INotificationService notificationService)
         {
             _notificationRepository = notificationRepository;
+            _notificationService = notificationService;
         }
 
         // GET: api/Notification
@@ -29,6 +32,14 @@ namespace EventManagementSystem.Controllers
         {
             var notifications = await _notificationRepository.GetAllNotificationsAsync();
             return Ok(notifications);
+        }
+
+        [Authorize(Roles ="Admin, User")]
+        [HttpGet("{eventId}/{userId}")]
+        public async Task<IActionResult> GetEventNotification(Guid eventId, string userId)
+        {
+            var notification = await _notificationService.GetEventNotificationAsync(eventId, userId);
+            return Ok(notification);
         }
 
         // GET: api/Notification/5

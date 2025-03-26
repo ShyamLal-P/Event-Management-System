@@ -3,84 +3,32 @@
   "WorkspaceRootPath": "C:\\Curriculum\\EventManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\repository\\remainingticketsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\remainingticketsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\remainingticketsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\remainingticketsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\ticketbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\ticketbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\ticketcancellationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\ticketcancellationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\totalticketsbookedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\totalticketsbookedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Curriculum\\EventManagementSystem\\Migrations\\20250326061053_changed col name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250326061053_changed col name.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\migrations\\20250319070206_addedalltables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:migrations\\20250319070206_addedalltables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\migrations\\20250319070206_addedalltables.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:migrations\\20250319070206_addedalltables.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\migrations\\20250320033133_updateeventmodel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:migrations\\20250320033133_updateeventmodel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\migrations\\20250326041055_addedcascadedeleteforeventtickts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:migrations\\20250326041055_addedcascadedeleteforeventtickts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\migrations\\eventmanagementsystemdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:migrations\\eventmanagementsystemdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\remainingticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\remainingticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\data\\eventmanagementsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:data\\eventmanagementsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\repository\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\migrations\\20250326041055_addedcascadedeleteforeventtickts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:migrations\\20250326041055_addedcascadedeleteforeventtickts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,258 +54,94 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20250326061053_changed col name.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250326061053_changed col name.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250326061053_changed col name.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250326061053_changed col name.cs",
-              "RelativeToolTip": "Migrations\\20250326061053_changed col name.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T06:10:53.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TotalTicketsBookedService.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Services\\TotalTicketsBookedService.cs",
-              "RelativeDocumentMoniker": "Services\\TotalTicketsBookedService.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\TotalTicketsBookedService.cs",
-              "RelativeToolTip": "Services\\TotalTicketsBookedService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:28:53.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TicketCancellationService.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Services\\TicketCancellationService.cs",
-              "RelativeDocumentMoniker": "Services\\TicketCancellationService.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\TicketCancellationService.cs",
-              "RelativeToolTip": "Services\\TicketCancellationService.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAwDYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:28:46.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TicketBookingService.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Services\\TicketBookingService.cs",
-              "RelativeDocumentMoniker": "Services\\TicketBookingService.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\TicketBookingService.cs",
-              "RelativeToolTip": "Services\\TicketBookingService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:28:22.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RemainingTicketsService.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Services\\RemainingTicketsService.cs",
-              "RelativeDocumentMoniker": "Services\\RemainingTicketsService.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\RemainingTicketsService.cs",
-              "RelativeToolTip": "Services\\RemainingTicketsService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:28:11.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RemainingTicketsRepository.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Repository\\RemainingTicketsRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\RemainingTicketsRepository.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Repository\\RemainingTicketsRepository.cs",
-              "RelativeToolTip": "Repository\\RemainingTicketsRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:27:10.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RemainingTicketsController.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\RemainingTicketsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RemainingTicketsController.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\RemainingTicketsController.cs",
-              "RelativeToolTip": "Controllers\\RemainingTicketsController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwBkAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:26:35.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EventManagementSystemDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Migrations\\EventManagementSystemDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\EventManagementSystemDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Migrations\\EventManagementSystemDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\EventManagementSystemDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAIwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:26:34.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250326041055_addedcascadedeleteforeventtickts.Designer.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250326041055_addedcascadedeleteforeventtickts.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250326041055_addedcascadedeleteforeventtickts.Designer.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250326041055_addedcascadedeleteforeventtickts.Designer.cs",
-              "RelativeToolTip": "Migrations\\20250326041055_addedcascadedeleteforeventtickts.Designer.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAIwDMAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:26:33.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20250320033133_UpdateEventModel.Designer.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250320033133_UpdateEventModel.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250320033133_UpdateEventModel.Designer.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250320033133_UpdateEventModel.Designer.cs",
-              "RelativeToolTip": "Migrations\\20250320033133_UpdateEventModel.Designer.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAIwDMAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:26:32.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "20250319070206_addedalltables.Designer.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250319070206_addedalltables.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250319070206_addedalltables.Designer.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250319070206_addedalltables.Designer.cs",
-              "RelativeToolTip": "Migrations\\20250319070206_addedalltables.Designer.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAIwDMAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:26:29.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20250319070206_addedalltables.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250319070206_addedalltables.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250319070206_addedalltables.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250319070206_addedalltables.cs",
-              "RelativeToolTip": "Migrations\\20250319070206_addedalltables.cs",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAuwOwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:26:22.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Models\\Event.cs",
-              "RelativeDocumentMoniker": "Models\\Event.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Models\\Event.cs",
-              "RelativeToolTip": "Models\\Event.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAqwB8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:24:56.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20250326041055_addedcascadedeleteforeventtickts.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250326041055_addedcascadedeleteforeventtickts.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250326041055_addedcascadedeleteforeventtickts.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250326041055_addedcascadedeleteforeventtickts.cs",
-              "RelativeToolTip": "Migrations\\20250326041055_addedcascadedeleteforeventtickts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:10:56.258Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EventManagementSystemDbContext.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Data\\EventManagementSystemDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\EventManagementSystemDbContext.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Data\\EventManagementSystemDbContext.cs",
-              "RelativeToolTip": "Data\\EventManagementSystemDbContext.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAwwCcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:07:32.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EventRepository.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Repository\\EventRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\EventRepository.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Repository\\EventRepository.cs",
-              "RelativeToolTip": "Repository\\EventRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T03:47:10.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventController.cs",
-              "RelativeToolTip": "Controllers\\EventController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAuwEkAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T03:05:58.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TokenRepository.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Repository\\TokenRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\TokenRepository.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Repository\\TokenRepository.cs",
-              "RelativeToolTip": "Repository\\TokenRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwCAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T11:55:24.017Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T11:53:55.578Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T11:52:49.217Z"
+              "WhenOpened": "2025-03-26T06:40:24.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "Controllers\\NotificationController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAEwCQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T06:38:30.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\NotificationService.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\NotificationService.cs",
+              "RelativeToolTip": "Services\\NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T06:37:02.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Interface\\INotificationService.cs",
+              "RelativeDocumentMoniker": "Interface\\INotificationService.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Interface\\INotificationService.cs",
+              "RelativeToolTip": "Interface\\INotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T06:36:35.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "INotificationRepository.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Interface\\INotificationRepository.cs",
+              "RelativeDocumentMoniker": "Interface\\INotificationRepository.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Interface\\INotificationRepository.cs",
+              "RelativeToolTip": "Interface\\INotificationRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T06:36:07.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "Models\\Ticket.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Models\\Ticket.cs",
+              "RelativeToolTip": "Models\\Ticket.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T06:35:36.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Models\\Event.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Models\\Event.cs",
+              "RelativeToolTip": "Models\\Event.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T06:35:29.302Z",
+              "EditorCaption": ""
             }
           ]
         }
