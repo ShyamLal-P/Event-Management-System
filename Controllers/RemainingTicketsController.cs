@@ -18,12 +18,12 @@ namespace EventManagementSystem.Controllers
         // GET: api/RemainingTickets/{eventId}
         [Authorize(Roles = "Admin, User")]
         [HttpGet("{eventId}")]
-        public async Task<ActionResult<int>> GetNoOfTickets(Guid eventId)
+        public async Task<ActionResult<int>> GetAvailableTickets(Guid eventId)
         {
             try
             {
-                var noOfTickets = await _remainingTicketsService.GetRemainingTicketsAsync(eventId);
-                return Ok(noOfTickets);
+                var availableTickets = await _remainingTicketsService.GetRemainingTicketsAsync(eventId);
+                return Ok(availableTickets);
             }
             catch (KeyNotFoundException)
             {

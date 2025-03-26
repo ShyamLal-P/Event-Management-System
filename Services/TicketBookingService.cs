@@ -17,7 +17,7 @@ namespace EventManagementSystem.Services
         public async Task<bool> BookTicketsAsync(Guid userId, Guid eventId, int numberOfTickets)
         {
             var eventItem = await _eventRepository.GetEventByIdAsync(eventId);
-            if (eventItem == null || eventItem.NoOfTickets < numberOfTickets || eventItem.Date < DateOnly.FromDateTime(DateTime.Now))
+            if (eventItem == null || eventItem.AvailableTickets < numberOfTickets || eventItem.Date < DateOnly.FromDateTime(DateTime.Now))
             {
                 return false; // Event not found, not enough tickets, or event date is in the past
             }
@@ -28,7 +28,7 @@ namespace EventManagementSystem.Services
                 return false; // User has already booked tickets for this event
             }
 
-            eventItem.NoOfTickets -= numberOfTickets; // Update the number of available tickets
+            eventItem.AvailableTickets -= numberOfTickets; // Update the number of available tickets
             await _eventRepository.UpdateEventAsync(eventItem);
 
             for (int i = 0; i < numberOfTickets; i++)

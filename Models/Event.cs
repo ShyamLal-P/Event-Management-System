@@ -13,7 +13,7 @@ namespace EventManagementWithAuthentication.Models
         public DateOnly Date { get; set; }
         public TimeOnly Time { get; set; }
         public int TotalTickets { get; set; }
-        public int NoOfTickets { get; set; }
+        public int AvailableTickets { get; set; }
         public double EventPrice { get; set; }
         public string OrganizerId { get; set; } // Foreign key to AspNetUsers
 
@@ -26,14 +26,14 @@ namespace EventManagementWithAuthentication.Models
         // Constructor to ensure NoOfTickets is set to TotalTickets
         public Event()
         {
-            NoOfTickets = TotalTickets;
+            AvailableTickets = TotalTickets;
         }
 
         // Method to set NoOfTickets when TotalTickets is set
         public void SetTotalTickets(int totalTickets)
         {
             TotalTickets = totalTickets;
-            NoOfTickets = totalTickets;
+            AvailableTickets = totalTickets;
         }
     }
 }

@@ -52,7 +52,7 @@ namespace EventManagementSystem.Services
                 await _ticketRepository.UpdateTicketAsync(ticket);
             }
 
-            eventItem.NoOfTickets += numberOfTickets; // Update the number of available tickets
+            eventItem.AvailableTickets += numberOfTickets; // Update the number of available tickets
             await _eventRepository.UpdateEventAsync(eventItem);
 
             return (true, "Tickets cancelled successfully.");

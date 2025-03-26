@@ -18,7 +18,7 @@ namespace EventManagementSystem.Services
             {
                 throw new KeyNotFoundException("Event not found");
             }
-            return eventItem.NoOfTickets;
+            return eventItem.AvailableTickets;
         }
     }
 }

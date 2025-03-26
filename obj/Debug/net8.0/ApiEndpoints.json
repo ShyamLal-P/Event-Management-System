@@ -386,7 +386,7 @@
   },
   {
     "ContainingType": "EventManagementSystem.Controllers.RemainingTicketsController",
-    "Method": "GetNoOfTickets",
+    "Method": "GetAvailableTickets",
     "RelativePath": "api/RemainingTickets/{eventId}",
     "HttpMethod": "GET",
     "IsController": true,

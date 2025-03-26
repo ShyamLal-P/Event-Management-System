@@ -1087,7 +1087,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "noOfTickets": {
+          "availableTickets": {
             "type": "integer",
             "format": "int32"
           },

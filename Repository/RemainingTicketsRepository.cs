@@ -19,7 +19,7 @@ namespace EventManagementSystem.Repository
             {
                 throw new KeyNotFoundException("Event not found");
             }
-            return eventItem.TotalTickets - eventItem.NoOfTickets;
+            return eventItem.TotalTickets - eventItem.AvailableTickets;
         }
     }
 }
