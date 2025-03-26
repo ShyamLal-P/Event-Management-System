@@ -37,7 +37,7 @@ namespace EventManagementSystem.Data
                 .HasOne(t => t.Event)
                 .WithMany(e => e.Tickets)
                 .HasForeignKey(t => t.EventId)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.Cascade);
 
             builder.Entity<Notification>()
                 .HasOne(n => n.User)

@@ -7,6 +7,9 @@ using Microsoft.Extensions.Logging;
 
 namespace EventManagementSystem.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -23,6 +26,11 @@ namespace EventManagementSystem.Controllers
         }
 
         //Post: /api/Auth/Register
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="registerRequestDto"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("Register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto registerRequestDto)

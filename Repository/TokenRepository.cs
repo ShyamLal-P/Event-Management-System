@@ -30,7 +30,7 @@ namespace EventManagementSystem.Repository
                 configuration["JWT:Issuer"],
                 configuration["JWT:Audience"],
                 claims,
-                expires: DateTime.Now.AddMinutes(15),
+                expires: DateTime.Now.AddMinutes(60),
                 signingCredentials: credentials);
             return new JwtSecurityTokenHandler().WriteToken(token);
         }

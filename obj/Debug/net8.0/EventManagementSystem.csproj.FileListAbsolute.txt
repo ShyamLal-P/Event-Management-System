@@ -151,3 +151,7 @@ C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\refint\EventManagementSyste
 C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\EventManagementSystem.pdb
 C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\EventManagementSystem.genruntimeconfig.cache
 C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\ref\EventManagementSystem.dll
+C:\Curriculum\EventManagementSystem\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Curriculum\EventManagementSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Curriculum\EventManagementSystem\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Curriculum\EventManagementSystem\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

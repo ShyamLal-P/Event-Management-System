@@ -9,6 +9,8 @@ using EventManagementSystem.Interface;
 using EventManagementSystem.Repository;
 using EventManagementSystem.Data;
 using EventManagementSystem.Services;
+using EventManagementWithAuthentication.Models;
+using Microsoft.AspNetCore.JsonPatch;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -111,6 +113,13 @@ builder.Services.AddSwaggerGen(options =>
             },
             new List<string>()
         }
+    });
+
+    // Add support for JSON Patch
+    options.MapType<JsonPatchDocument<Event>>(() => new OpenApiSchema
+    {
+        Type = "object",
+        AdditionalPropertiesAllowed = true
     });
 });
 

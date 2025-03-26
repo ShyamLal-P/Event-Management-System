@@ -1,13 +1,7 @@
-﻿using EventManagementSystem.Data;
-using EventManagementWithAuthentication.Models;
+﻿using EventManagementWithAuthentication.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using EventManagementSystem.Interface;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EventManagementSystem.Controllers
 {
@@ -61,16 +55,34 @@ namespace EventManagementSystem.Controllers
                 return BadRequest("Event ID mismatch.");
             }
 
-            if (!_eventRepository.EventExists(id))
+            var existingEvent = await _eventRepository.GetEventByIdAsync(id);
+            if (existingEvent == null)
             {
                 return NotFound();
             }
 
-            eventItem.SetTotalTickets(eventItem.TotalTickets); // Ensure NoOfTickets is set
-            await _eventRepository.UpdateEventAsync(eventItem);
+            // Update the properties of the existing event with the new values
+            existingEvent.Name = eventItem.Name;
+            existingEvent.Category = eventItem.Category;
+            existingEvent.Location = eventItem.Location;
+            existingEvent.Date = eventItem.Date;
+            existingEvent.Time = eventItem.Time;
+            existingEvent.TotalTickets = eventItem.TotalTickets;
+            existingEvent.EventPrice = eventItem.EventPrice;
+            existingEvent.OrganizerId = eventItem.OrganizerId;
+
+            // Automatically update NoOfTickets based on TotalTickets
+            existingEvent.SetTotalTickets(eventItem.TotalTickets);
+
+            await _eventRepository.UpdateEventAsync(existingEvent);
             return NoContent();
         }
 
+        /// <summary>
+        /// This delete when 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // DELETE: api/Events/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEvent(Guid id)

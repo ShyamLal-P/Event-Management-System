@@ -23,7 +23,6 @@ namespace EventManagementSystem.Controllers
         }
 
         // GET: api/Feedback
-        [Authorize(Roles = "User, Admin")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Feedback>>> GetFeedbacks()
         {
