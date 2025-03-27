@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EventManagementWithAuthentication.Models
+namespace EventManagementSystem.Models
 {
     public class Event
     {

@@ -141,6 +141,52 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Event"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Event"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Event"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Event"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Event"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Event"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Event"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/api/Event/{id}": {
@@ -278,6 +324,14 @@
             "in": "query",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "ticketId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1061,6 +1115,13 @@
           "submittedDate": {
             "type": "string",
             "format": "date"
+          },
+          "ticketId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ticket": {
+            "$ref": "#/components/schemas/Ticket"
           }
         },
         "additionalProperties": false
@@ -1184,6 +1245,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Notification"
+            },
+            "nullable": true
+          },
+          "feedbacks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Feedback"
             },
             "nullable": true
           }

@@ -67,7 +67,33 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementWithAuthentication.Models.Event, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementSystem.Models.Event, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EventManagementSystem.Controllers.EventController",
+    "Method": "PostEvent",
+    "RelativePath": "api/Event",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventItem",
+        "Type": "EventManagementSystem.Models.Event",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EventManagementSystem.Models.Event",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -93,7 +119,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EventManagementWithAuthentication.Models.Event",
+        "Type": "EventManagementSystem.Models.Event",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -118,7 +144,7 @@
       },
       {
         "Name": "eventItem",
-        "Type": "EventManagementWithAuthentication.Models.Event",
+        "Type": "EventManagementSystem.Models.Event",
         "IsRequired": true
       }
     ],
@@ -167,6 +193,11 @@
         "Name": "comments",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "ticketId",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -181,7 +212,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementWithAuthentication.Models.Feedback, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementSystem.Models.Feedback, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -207,7 +238,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EventManagementWithAuthentication.Models.Feedback",
+        "Type": "EventManagementSystem.Models.Feedback",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -232,7 +263,7 @@
       },
       {
         "Name": "feedbackItem",
-        "Type": "EventManagementWithAuthentication.Models.Feedback",
+        "Type": "EventManagementSystem.Models.Feedback",
         "IsRequired": true
       }
     ],
@@ -264,7 +295,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementWithAuthentication.Models.Notification, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementSystem.Models.Notification, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -284,13 +315,13 @@
     "Parameters": [
       {
         "Name": "notificationItem",
-        "Type": "EventManagementWithAuthentication.Models.Notification",
+        "Type": "EventManagementSystem.Models.Notification",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "EventManagementWithAuthentication.Models.Notification",
+        "Type": "EventManagementSystem.Models.Notification",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -337,7 +368,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EventManagementWithAuthentication.Models.Notification",
+        "Type": "EventManagementSystem.Models.Notification",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -362,7 +393,7 @@
       },
       {
         "Name": "notificationItem",
-        "Type": "EventManagementWithAuthentication.Models.Notification",
+        "Type": "EventManagementSystem.Models.Notification",
         "IsRequired": true
       }
     ],
@@ -420,7 +451,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementWithAuthentication.Models.Ticket, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementSystem.Models.Ticket, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -446,7 +477,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EventManagementWithAuthentication.Models.Ticket",
+        "Type": "EventManagementSystem.Models.Ticket",
         "MediaTypes": [
           "text/plain",
           "application/json",

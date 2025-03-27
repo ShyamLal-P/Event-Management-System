@@ -1,6 +1,6 @@
 ﻿using EventManagementSystem.Data;
 using EventManagementSystem.Interface;
-using EventManagementWithAuthentication.Models;
+using EventManagementSystem.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -67,8 +67,26 @@ namespace EventManagementSystem.Services
             return $"{minutes} minutes";
         }
 
-        public async Task SubmitFeedbackAsync(Guid eventId, string userId, int rating, string comments)
+        public async Task SubmitFeedbackAsync(Guid eventId, string userId, int rating, string comments, Guid ticketId)
         {
+            // Check if the ticket exists and is booked
+            var ticket = await _context.Tickets
+                .FirstOrDefaultAsync(t => t.Id == ticketId && t.Status == "booked");
+
+            if (ticket == null)
+            {
+                throw new InvalidOperationException("Ticket not found or not booked.");
+            }
+
+            // Check if feedback already exists for the ticket
+            var existingFeedback = await _context.Feedbacks
+                .AnyAsync(f => f.TicketId == ticketId);
+
+            if (existingFeedback)
+            {
+                throw new InvalidOperationException("Feedback already submitted for this ticket.");
+            }
+
             var feedback = new Feedback
             {
                 Id = Guid.NewGuid(),
@@ -77,11 +95,18 @@ namespace EventManagementSystem.Services
                 Rating = rating,
                 Comments = comments,
                 SubmittedTime = TimeOnly.FromDateTime(DateTime.Now),
-                SubmittedDate = DateOnly.FromDateTime(DateTime.Now)
+                SubmittedDate = DateOnly.FromDateTime(DateTime.Now),
+                TicketId = ticketId
             };
 
             _context.Feedbacks.Add(feedback);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<bool> FeedbackExistsForTicketAsync(Guid ticketId)
+        {
+            return await _context.Feedbacks
+                .AnyAsync(f => f.TicketId == ticketId);
         }
     }
 }

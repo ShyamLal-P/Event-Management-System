@@ -1,6 +1,6 @@
 ﻿using EventManagementSystem.Data;
 using EventManagementSystem.Interface;
-using EventManagementWithAuthentication.Models;
+using EventManagementSystem.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EventManagementSystem.Repository

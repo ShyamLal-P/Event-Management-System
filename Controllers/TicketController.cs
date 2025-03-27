@@ -1,5 +1,5 @@
 ﻿using EventManagementSystem.Data;
-using EventManagementWithAuthentication.Models;
+using EventManagementSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;

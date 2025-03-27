@@ -1,5 +1,5 @@
 ﻿using EventManagementSystem.Interface;
-using EventManagementWithAuthentication.Models;
+using EventManagementSystem.Models;
 
 namespace EventManagementSystem.Services
 {

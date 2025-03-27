@@ -9,7 +9,7 @@ using EventManagementSystem.Interface;
 using EventManagementSystem.Repository;
 using EventManagementSystem.Data;
 using EventManagementSystem.Services;
-using EventManagementWithAuthentication.Models;
+using EventManagementSystem.Models;
 using Microsoft.AspNetCore.JsonPatch;
 
 var builder = WebApplication.CreateBuilder(args);

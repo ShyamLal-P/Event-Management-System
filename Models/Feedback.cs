@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EventManagementWithAuthentication.Models
+namespace EventManagementSystem.Models
 {
     public class Feedback
     {
@@ -18,5 +18,8 @@ namespace EventManagementWithAuthentication.Models
         public string Comments { get; set; }
         public TimeOnly SubmittedTime { get; set; }
         public DateOnly SubmittedDate { get; set; }
+        public Guid TicketId { get; set; } // Foreign key to Ticket
+        [ForeignKey("TicketId")]
+        public virtual Ticket Ticket { get; set; }
     }
 }

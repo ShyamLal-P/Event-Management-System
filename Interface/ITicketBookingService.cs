@@ -1,4 +1,4 @@
-﻿using EventManagementWithAuthentication.Models;
+﻿using EventManagementSystem.Models;
 
 namespace EventManagementSystem.Interface
 {

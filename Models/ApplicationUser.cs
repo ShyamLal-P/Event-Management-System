@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
 
-namespace EventManagementWithAuthentication.Models
+namespace EventManagementSystem.Models
 {
     public class ApplicationUser : IdentityUser
     {

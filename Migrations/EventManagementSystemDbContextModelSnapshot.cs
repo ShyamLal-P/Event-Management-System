@@ -22,7 +22,7 @@ namespace EventManagementSystem.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Event", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Event", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -66,7 +66,7 @@ namespace EventManagementSystem.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Feedback", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Feedback", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -88,6 +88,9 @@ namespace EventManagementSystem.Migrations
                     b.Property<TimeOnly>("SubmittedTime")
                         .HasColumnType("time");
 
+                    b.Property<Guid>("TicketId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -96,12 +99,14 @@ namespace EventManagementSystem.Migrations
 
                     b.HasIndex("EventId");
 
+                    b.HasIndex("TicketId");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("Feedbacks");
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Notification", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Notification", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -135,7 +140,7 @@ namespace EventManagementSystem.Migrations
                     b.ToTable("Notifications");
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Ticket", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Ticket", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -387,16 +392,16 @@ namespace EventManagementSystem.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.ApplicationUser", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.ApplicationUser", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
                     b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Event", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Event", b =>
                 {
-                    b.HasOne("EventManagementWithAuthentication.Models.ApplicationUser", "Organizer")
+                    b.HasOne("EventManagementSystem.Models.ApplicationUser", "Organizer")
                         .WithMany()
                         .HasForeignKey("OrganizerId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -405,15 +410,21 @@ namespace EventManagementSystem.Migrations
                     b.Navigation("Organizer");
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Feedback", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Feedback", b =>
                 {
-                    b.HasOne("EventManagementWithAuthentication.Models.Event", "Event")
+                    b.HasOne("EventManagementSystem.Models.Event", "Event")
                         .WithMany("Feedbacks")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("EventManagementWithAuthentication.Models.ApplicationUser", "User")
+                    b.HasOne("EventManagementSystem.Models.Ticket", "Ticket")
+                        .WithMany("Feedbacks")
+                        .HasForeignKey("TicketId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("EventManagementSystem.Models.ApplicationUser", "User")
                         .WithMany("Feedbacks")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.NoAction)
@@ -421,24 +432,26 @@ namespace EventManagementSystem.Migrations
 
                     b.Navigation("Event");
 
+                    b.Navigation("Ticket");
+
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Notification", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Notification", b =>
                 {
-                    b.HasOne("EventManagementWithAuthentication.Models.Event", "Event")
+                    b.HasOne("EventManagementSystem.Models.Event", "Event")
                         .WithMany("Notifications")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("EventManagementWithAuthentication.Models.Ticket", "Ticket")
+                    b.HasOne("EventManagementSystem.Models.Ticket", "Ticket")
                         .WithMany("Notifications")
                         .HasForeignKey("TicketId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("EventManagementWithAuthentication.Models.ApplicationUser", "User")
+                    b.HasOne("EventManagementSystem.Models.ApplicationUser", "User")
                         .WithMany("Notifications")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.NoAction)
@@ -451,15 +464,15 @@ namespace EventManagementSystem.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Ticket", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Ticket", b =>
                 {
-                    b.HasOne("EventManagementWithAuthentication.Models.Event", "Event")
+                    b.HasOne("EventManagementSystem.Models.Event", "Event")
                         .WithMany("Tickets")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EventManagementWithAuthentication.Models.ApplicationUser", "User")
+                    b.HasOne("EventManagementSystem.Models.ApplicationUser", "User")
                         .WithMany("Tickets")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.NoAction)
@@ -521,7 +534,7 @@ namespace EventManagementSystem.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Event", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Event", b =>
                 {
                     b.Navigation("Feedbacks");
 
@@ -530,12 +543,14 @@ namespace EventManagementSystem.Migrations
                     b.Navigation("Tickets");
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.Ticket", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.Ticket", b =>
                 {
+                    b.Navigation("Feedbacks");
+
                     b.Navigation("Notifications");
                 });
 
-            modelBuilder.Entity("EventManagementWithAuthentication.Models.ApplicationUser", b =>
+            modelBuilder.Entity("EventManagementSystem.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Feedbacks");
 

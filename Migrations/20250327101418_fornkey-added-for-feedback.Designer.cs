@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventManagementSystem.Migrations
 {
     [DbContext(typeof(EventManagementSystemDbContext))]
-    [Migration("20250320033133_UpdateEventModel")]
-    partial class UpdateEventModel
+    [Migration("20250327101418_fornkey-added-for-feedback")]
+    partial class fornkeyaddedforfeedback
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,6 +30,9 @@ namespace EventManagementSystem.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AvailableTickets")
+                        .HasColumnType("int");
 
                     b.Property<string>("Category")
                         .IsRequired()
@@ -48,9 +51,6 @@ namespace EventManagementSystem.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("NoOfTickets")
-                        .HasColumnType("int");
 
                     b.Property<string>("OrganizerId")
                         .IsRequired()
@@ -85,8 +85,14 @@ namespace EventManagementSystem.Migrations
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
-                    b.Property<TimeOnly>("SubmittedTimestamp")
+                    b.Property<DateOnly>("SubmittedDate")
+                        .HasColumnType("date");
+
+                    b.Property<TimeOnly>("SubmittedTime")
                         .HasColumnType("time");
+
+                    b.Property<Guid>("TicketId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -95,6 +101,8 @@ namespace EventManagementSystem.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("EventId");
+
+                    b.HasIndex("TicketId");
 
                     b.HasIndex("UserId");
 
@@ -413,6 +421,12 @@ namespace EventManagementSystem.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
+                    b.HasOne("EventManagementSystem.Models.Ticket", "Ticket")
+                        .WithMany("Feedbacks")
+                        .HasForeignKey("TicketId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.HasOne("EventManagementSystem.Models.ApplicationUser", "User")
                         .WithMany("Feedbacks")
                         .HasForeignKey("UserId")
@@ -420,6 +434,8 @@ namespace EventManagementSystem.Migrations
                         .IsRequired();
 
                     b.Navigation("Event");
+
+                    b.Navigation("Ticket");
 
                     b.Navigation("User");
                 });
@@ -456,7 +472,7 @@ namespace EventManagementSystem.Migrations
                     b.HasOne("EventManagementSystem.Models.Event", "Event")
                         .WithMany("Tickets")
                         .HasForeignKey("EventId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("EventManagementSystem.Models.ApplicationUser", "User")
@@ -532,6 +548,8 @@ namespace EventManagementSystem.Migrations
 
             modelBuilder.Entity("EventManagementSystem.Models.Ticket", b =>
                 {
+                    b.Navigation("Feedbacks");
+
                     b.Navigation("Notifications");
                 });
 

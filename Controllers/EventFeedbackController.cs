@@ -1,5 +1,5 @@
 ﻿using EventManagementSystem.Interface;
-using EventManagementWithAuthentication.Models;
+using EventManagementSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventManagementSystem.Controllers
@@ -16,7 +16,7 @@ namespace EventManagementSystem.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostFeedback(Guid eventId, string userId, int rating, string comments)
+        public async Task<IActionResult> PostFeedback(Guid eventId, string userId, int rating, string comments, Guid ticketId)
         {
             if (rating < 1 || rating > 5)
             {
@@ -36,7 +36,14 @@ namespace EventManagementSystem.Controllers
                 return BadRequest($"Feedback will be enabled after the event starts. Time remaining: {timeUntilEventStarts}");
             }
 
-            await _feedbackService.SubmitFeedbackAsync(eventId, userId, rating, comments);
+            try
+            {
+                await _feedbackService.SubmitFeedbackAsync(eventId, userId, rating, comments, ticketId);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
             return Ok("Feedback submitted successfully.");
         }

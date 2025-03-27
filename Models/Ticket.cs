@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EventManagementWithAuthentication.Models
+namespace EventManagementSystem.Models
 {
     public class Ticket
     {
@@ -15,5 +15,6 @@ namespace EventManagementWithAuthentication.Models
         public DateOnly BookingDate { get; set; }
         public string Status { get; set; }
         public virtual ICollection<Notification>? Notifications { get; set; }
+        public virtual ICollection<Feedback>? Feedbacks { get; set; }
     }
 }

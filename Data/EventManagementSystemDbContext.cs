@@ -1,6 +1,6 @@
 ﻿using System.Reflection.Emit;
 using EventManagementSystem.Models;
-using EventManagementWithAuthentication.Models;
+using EventManagementSystem.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -67,6 +67,12 @@ namespace EventManagementSystem.Data
                 .HasOne(f => f.Event)
                 .WithMany(e => e.Feedbacks)
                 .HasForeignKey(f => f.EventId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            builder.Entity<Feedback>()
+                .HasOne(f => f.Ticket)
+                .WithMany(t => t.Feedbacks)
+                .HasForeignKey(f => f.TicketId)
                 .OnDelete(DeleteBehavior.NoAction);
 
             //Seedind Roles
