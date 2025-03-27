@@ -22,17 +22,18 @@ builder.Services.AddDbContext<EventManagementSystemDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Register repositories
-builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
-builder.Services.AddScoped<ITicketRepository, TicketRepository>();
+builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
-builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
-builder.Services.AddScoped<IFeedbackService, FeedbackService>();
+builder.Services.AddScoped<ITicketRepository, TicketRepository>();
 builder.Services.AddScoped<ITicketBookingService, TicketBookingService>();
 builder.Services.AddScoped<ITicketCancellationService, TicketCancellationService>();
-builder.Services.AddScoped<INotificationService, NotificationService>();
-builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IRemainingTicketsService, RemainingTicketsService>();
 builder.Services.AddScoped<ITotalTicketsBookedService, TotalTicketsBookedService>();
+builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
+builder.Services.AddScoped<INotificationService, NotificationService>();
+builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
+builder.Services.AddScoped<IFeedbackService, FeedbackService>();
+builder.Services.AddScoped<IAverageRatingService, AverageRatingService>();
 
 //this block of code is added fter updating the db with new database of the authorization roles 
 builder.Services.AddIdentityCore<IdentityUser>()

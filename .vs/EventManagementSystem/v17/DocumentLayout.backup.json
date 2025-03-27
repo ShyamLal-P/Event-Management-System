@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Curriculum\\EventManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\eventfeedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventfeedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\averageratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\averageratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\eventfeedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventfeedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\averageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\averageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Curriculum\\EventManagementSystem\\Migrations\\20250327101418_fornkey-added-for-feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250327101418_fornkey-added-for-feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\iaverageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\iaverageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\data\\eventmanagementsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +45,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\migrations\\20250327101418_fornkey-added-for-feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:migrations\\20250327101418_fornkey-added-for-feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,23 +58,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T11:32:07.254Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "AverageRatingController.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\AverageRatingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AverageRatingController.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\AverageRatingController.cs",
+              "RelativeToolTip": "Controllers\\AverageRatingController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T11:31:03.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AverageRatingService.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Services\\AverageRatingService.cs",
+              "RelativeDocumentMoniker": "Services\\AverageRatingService.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\AverageRatingService.cs",
+              "RelativeToolTip": "Services\\AverageRatingService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T11:30:07.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAverageRatingService.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Interface\\IAverageRatingService.cs",
+              "RelativeDocumentMoniker": "Interface\\IAverageRatingService.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Interface\\IAverageRatingService.cs",
+              "RelativeToolTip": "Interface\\IAverageRatingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T11:29:40.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "EventController.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventController.cs",
@@ -71,46 +127,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EventFeedbackController.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventFeedbackController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventFeedbackController.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventFeedbackController.cs",
               "RelativeToolTip": "Controllers\\EventFeedbackController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAmwDIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T10:25:30.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "IFeedbackService.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Interface\\IFeedbackService.cs",
               "RelativeDocumentMoniker": "Interface\\IFeedbackService.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Interface\\IFeedbackService.cs",
               "RelativeToolTip": "Interface\\IFeedbackService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T10:25:16.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "FeedbackService.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Services\\FeedbackService.cs",
               "RelativeDocumentMoniker": "Services\\FeedbackService.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\FeedbackService.cs",
               "RelativeToolTip": "Services\\FeedbackService.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAmwG8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwEUAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T11:18:53.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "20250327101418_fornkey-added-for-feedback.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Migrations\\20250327101418_fornkey-added-for-feedback.cs",
               "RelativeDocumentMoniker": "Migrations\\20250327101418_fornkey-added-for-feedback.cs",
@@ -118,12 +174,11 @@
               "RelativeToolTip": "Migrations\\20250327101418_fornkey-added-for-feedback.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:14:18.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:14:18.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Ticket.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Models\\Ticket.cs",
               "RelativeDocumentMoniker": "Models\\Ticket.cs",
@@ -131,12 +186,11 @@
               "RelativeToolTip": "Models\\Ticket.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA+wBEAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:11:44.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:11:44.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "EventManagementSystemDbContext.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Data\\EventManagementSystemDbContext.cs",
               "RelativeDocumentMoniker": "Data\\EventManagementSystemDbContext.cs",
@@ -144,12 +198,11 @@
               "RelativeToolTip": "Data\\EventManagementSystemDbContext.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAswDwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:12:27.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:12:27.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Feedback.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Models\\Feedback.cs",
               "RelativeDocumentMoniker": "Models\\Feedback.cs",
@@ -157,8 +210,7 @@
               "RelativeToolTip": "Models\\Feedback.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAADwvxYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:11:32.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:11:32.004Z"
             }
           ]
         }

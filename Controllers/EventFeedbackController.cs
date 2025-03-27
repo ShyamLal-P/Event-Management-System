@@ -1,5 +1,6 @@
 ﻿using EventManagementSystem.Interface;
 using EventManagementSystem.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventManagementSystem.Controllers
@@ -15,8 +16,9 @@ namespace EventManagementSystem.Controllers
             _feedbackService = feedbackService;
         }
 
+        [Authorize(Roles ="User, Admin")]
         [HttpPost]
-        public async Task<IActionResult> PostFeedback(Guid eventId, string userId, int rating, string comments, Guid ticketId)
+        public async Task<IActionResult> PostFeedback(Guid eventId, string userId, Guid ticketId, int rating, string comments)
         {
             if (rating < 1 || rating > 5)
             {
@@ -38,7 +40,7 @@ namespace EventManagementSystem.Controllers
 
             try
             {
-                await _feedbackService.SubmitFeedbackAsync(eventId, userId, rating, comments, ticketId);
+                await _feedbackService.SubmitFeedbackAsync(eventId, userId, ticketId, rating, comments);
             }
             catch (InvalidOperationException ex)
             {

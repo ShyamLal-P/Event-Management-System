@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventManagementSystem.Controllers.AverageRatingController",
+    "Method": "GetAverageRating",
+    "RelativePath": "api/AverageRating/{eventId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventManagementSystem.Controllers.BookingController",
     "Method": "BookTickets",
     "RelativePath": "api/Booking/BookTickets",
@@ -185,6 +201,11 @@
         "IsRequired": false
       },
       {
+        "Name": "ticketId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
         "Name": "rating",
         "Type": "System.Int32",
         "IsRequired": false
@@ -192,11 +213,6 @@
       {
         "Name": "comments",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ticketId",
-        "Type": "System.Guid",
         "IsRequired": false
       }
     ],

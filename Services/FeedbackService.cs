@@ -67,7 +67,7 @@ namespace EventManagementSystem.Services
             return $"{minutes} minutes";
         }
 
-        public async Task SubmitFeedbackAsync(Guid eventId, string userId, int rating, string comments, Guid ticketId)
+        public async Task SubmitFeedbackAsync(Guid eventId, string userId, Guid ticketId, int rating, string comments)
         {
             // Check if the ticket exists and is booked
             var ticket = await _context.Tickets

@@ -67,6 +67,29 @@
         }
       }
     },
+    "/api/AverageRating/{eventId}": {
+      "get": {
+        "tags": [
+          "AverageRating"
+        ],
+        "parameters": [
+          {
+            "name": "eventId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Booking/BookTickets": {
       "post": {
         "tags": [
@@ -312,6 +335,14 @@
             }
           },
           {
+            "name": "ticketId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
             "name": "rating",
             "in": "query",
             "schema": {
@@ -324,14 +355,6 @@
             "in": "query",
             "schema": {
               "type": "string"
-            }
-          },
-          {
-            "name": "ticketId",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
             }
           }
         ],
