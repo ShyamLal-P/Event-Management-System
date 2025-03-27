@@ -44,15 +44,15 @@ namespace EventManagementSystem.Controllers
         }
 
         // POST: api/Ticket
-        [HttpPost]
+        /*[HttpPost]
         public async Task<ActionResult<Ticket>> PostTicket(Ticket ticketItem)
         {
             await _ticketRepository.AddTicketAsync(ticketItem);
             return CreatedAtAction(nameof(GetTicket), new { id = ticketItem.Id }, ticketItem);
-        }
+        }*/
 
         // PUT: api/Ticket/5
-        [HttpPut("{id}")]
+        /*[HttpPut("{id}")]
         public async Task<IActionResult> UpdateTicket(Guid id, [FromBody] Ticket ticketItem)
         {
             if (id != ticketItem.Id)
@@ -67,7 +67,7 @@ namespace EventManagementSystem.Controllers
 
             await _ticketRepository.UpdateTicketAsync(ticketItem);
             return NoContent();
-        }
+        }*/
 
         // DELETE: api/Ticket/5
         [HttpDelete("{id}")]

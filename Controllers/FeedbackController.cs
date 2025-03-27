@@ -8,18 +8,23 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using EventManagementSystem.Interface;
+using EventManagementSystem.Services;
+using System.Security.Claims;
 
 namespace EventManagementSystem.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class FeedbackController : ControllerBase
     {
         private readonly IFeedbackRepository _feedbackRepository;
+        private readonly IFeedbackService _feedbackService;
 
-        public FeedbackController(IFeedbackRepository feedbackRepository)
+        public FeedbackController(IFeedbackRepository feedbackRepository, IFeedbackService feedbackService)
         {
             _feedbackRepository = feedbackRepository;
+            _feedbackService = feedbackService;
         }
 
         // GET: api/Feedback
@@ -31,6 +36,7 @@ namespace EventManagementSystem.Controllers
         }
 
         // GET: api/Feedback/5
+        [Authorize(Roles = "User, Admin")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Feedback>> GetFeedback(Guid id)
         {
@@ -43,14 +49,23 @@ namespace EventManagementSystem.Controllers
         }
 
         // POST: api/Feedback
+        /*[Authorize(Roles = "User, Admin")]
         [HttpPost]
-        public async Task<ActionResult<Feedback>> PostFeedback(Feedback feedbackItem)
+        public async Task<IActionResult> PostFeedback([FromQuery] Guid eventId, [FromQuery] int rating, [FromQuery] string comments)
         {
-            await _feedbackRepository.AddFeedbackAsync(feedbackItem);
-            return CreatedAtAction(nameof(GetFeedback), new { id = feedbackItem.Id }, feedbackItem);
-        }
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result = await _feedbackService.PostFeedbackAsync(userId, eventId, rating, comments);
+
+            if (result == "Feedback posted successfully.")
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result);
+        }*/
 
         // PUT: api/Feedback/5
+        [Authorize(Roles = "User, Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateFeedback(Guid id, [FromBody] Feedback feedbackItem)
         {
@@ -69,6 +84,7 @@ namespace EventManagementSystem.Controllers
         }
 
         // DELETE: api/Feedback/5
+        [Authorize(Roles = "User, Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteFeedback(Guid id)
         {

@@ -141,52 +141,6 @@
             }
           }
         }
-      },
-      "post": {
-        "tags": [
-          "Event"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Event"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Event"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Event"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Event"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Event"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Event"
-                }
-              }
-            }
-          }
-        }
       }
     },
     "/api/Event/{id}": {
@@ -290,6 +244,50 @@
         }
       }
     },
+    "/api/EventFeedback": {
+      "post": {
+        "tags": [
+          "EventFeedback"
+        ],
+        "parameters": [
+          {
+            "name": "eventId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rating",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "comments",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Feedback": {
       "get": {
         "tags": [
@@ -321,52 +319,6 @@
                   "items": {
                     "$ref": "#/components/schemas/Feedback"
                   }
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Feedback"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Feedback"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Feedback"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Feedback"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Feedback"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Feedback"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Feedback"
                 }
               }
             }
@@ -770,52 +722,6 @@
             }
           }
         }
-      },
-      "post": {
-        "tags": [
-          "Ticket"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Ticket"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Ticket"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Ticket"
-                }
-              }
-            }
-          }
-        }
       }
     },
     "/api/Ticket/{id}": {
@@ -854,46 +760,6 @@
                 }
               }
             }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Ticket"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Ticket"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
           }
         }
       },
@@ -1179,6 +1045,8 @@
             "$ref": "#/components/schemas/Event"
           },
           "rating": {
+            "maximum": 5,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
@@ -1186,9 +1054,13 @@
             "type": "string",
             "nullable": true
           },
-          "submittedTimestamp": {
+          "submittedTime": {
             "type": "string",
             "format": "time"
+          },
+          "submittedDate": {
+            "type": "string",
+            "format": "date"
           }
         },
         "additionalProperties": false

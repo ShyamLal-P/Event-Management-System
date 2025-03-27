@@ -38,13 +38,13 @@ namespace EventManagementSystem.Controllers
         }
 
         // POST: api/Events
-        [HttpPost]
+        /*[HttpPost]
         public async Task<ActionResult<Event>> PostEvent(Event eventItem)
         {
             eventItem.SetTotalTickets(eventItem.TotalTickets); // Ensure NoOfTickets is set
             await _eventRepository.AddEventAsync(eventItem);
             return CreatedAtAction(nameof(GetEvent), new { id = eventItem.Id }, eventItem);
-        }
+        }*/
 
         // PUT: api/Events/5
         [HttpPut("{id}")]

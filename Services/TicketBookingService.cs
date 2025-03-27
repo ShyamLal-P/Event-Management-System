@@ -22,11 +22,11 @@ namespace EventManagementSystem.Services
                 return false; // Event not found, not enough tickets, or event date is in the past
             }
 
-            var existingTickets = await GetTicketsByUserAndEventAsync(userId, eventId);
-            if (existingTickets.Any())
-            {
-                return false; // User has already booked tickets for this event
-            }
+            //var existingTickets = await GetTicketsByUserAndEventAsync(userId, eventId);
+            //if (existingTickets.Any(t => t.Status == "Booked"))
+            //{
+            //    return false; // User has already booked tickets for this event
+            //}
 
             eventItem.AvailableTickets -= numberOfTickets; // Update the number of available tickets
             await _eventRepository.UpdateEventAsync(eventItem);

@@ -26,6 +26,7 @@ builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 builder.Services.AddScoped<ITicketRepository, TicketRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
+builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 builder.Services.AddScoped<ITicketBookingService, TicketBookingService>();
 builder.Services.AddScoped<ITicketCancellationService, TicketCancellationService>();
 builder.Services.AddScoped<INotificationService, NotificationService>();
