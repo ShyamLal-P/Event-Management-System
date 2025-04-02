@@ -1210,6 +1210,7 @@
       },
       "RegisterRequestDto": {
         "required": [
+          "email",
           "password",
           "username"
         ],
@@ -1218,12 +1219,22 @@
           "username": {
             "minLength": 1,
             "type": "string",
+            "format": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
             "format": "email"
           },
           "password": {
             "minLength": 1,
             "type": "string",
             "format": "password"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "format": "tel",
+            "nullable": true
           },
           "roles": {
             "type": "array",

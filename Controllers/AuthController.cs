@@ -35,26 +35,29 @@ namespace EventManagementSystem.Controllers
         [Route("Register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto registerRequestDto)
         {
-            var idetityUser = new IdentityUser
+            var identityUser = new IdentityUser
             {
                 UserName = registerRequestDto.Username,
-                Email = registerRequestDto.Username,
+                Email = registerRequestDto.Email,
+                PhoneNumber = registerRequestDto.PhoneNumber
             };
-            var identityResult = await userManager.CreateAsync(idetityUser, registerRequestDto.Password);
+
+            var identityResult = await userManager.CreateAsync(identityUser, registerRequestDto.Password);
             if (identityResult.Succeeded)
             {
-                //Add roles to this user
+                // Add roles to this user
                 if (registerRequestDto.Roles != null && registerRequestDto.Roles.Any())
                 {
-                    identityResult = await userManager.AddToRolesAsync(idetityUser, registerRequestDto.Roles);
+                    identityResult = await userManager.AddToRolesAsync(identityUser, registerRequestDto.Roles);
                     if (identityResult.Succeeded)
                     {
-                        return Ok("User Was registered! Please Log in Now");
+                        return Ok("User was registered! Please log in now.");
                     }
                 }
             }
-            return BadRequest("Something Went Wrong! Try Again");
+            return BadRequest("Something went wrong! Try again.");
         }
+
 
         //Post: /api/Auth/Login
         [HttpPost]

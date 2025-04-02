@@ -16,7 +16,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-    
+
+//The below code if for making it access for the angular and frontend
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+});
+
 
 builder.Services.AddDbContext<EventManagementSystemDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -139,6 +148,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseRouting();
+
+// Use the CORS policy
+app.UseCors("AllowAllOrigins");
 
 app.UseAuthentication(); //adding this line for authentication
 app.UseAuthorization();
