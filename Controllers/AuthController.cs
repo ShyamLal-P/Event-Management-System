@@ -45,18 +45,20 @@ namespace EventManagementSystem.Controllers
             var identityResult = await userManager.CreateAsync(identityUser, registerRequestDto.Password);
             if (identityResult.Succeeded)
             {
-                // Add roles to this user
                 if (registerRequestDto.Roles != null && registerRequestDto.Roles.Any())
                 {
                     identityResult = await userManager.AddToRolesAsync(identityUser, registerRequestDto.Roles);
                     if (identityResult.Succeeded)
                     {
-                        return Ok("User was registered! Please log in now.");
+                        return Ok(); // No message, just status 200
                     }
                 }
+                return Ok(); // Return 200 if no roles provided
             }
-            return BadRequest("Something went wrong! Try again.");
+
+            return BadRequest(); // No message, just status 400
         }
+
 
 
         //Post: /api/Auth/Login
