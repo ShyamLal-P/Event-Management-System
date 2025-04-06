@@ -38,8 +38,9 @@ namespace EventManagementSystem.Controllers
         }
 
         // POST: api/Events
+        [Authorize(Roles ="Admin")]
         [HttpPost]
-        public async Task<ActionResult<Event>> PostEvent(Event eventItem)
+        public async Task<ActionResult<Event>> PostEvent([FromBody] Event eventItem)
         {
             eventItem.SetTotalTickets(eventItem.TotalTickets); // Ensure NoOfTickets is set
             await _eventRepository.AddEventAsync(eventItem);

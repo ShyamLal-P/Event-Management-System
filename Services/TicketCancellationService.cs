@@ -21,18 +21,17 @@ namespace EventManagementSystem.Services
                 return (false, "Event not found.");
             }
 
-            var currentDate = DateOnly.FromDateTime(DateTime.Now);
-            var currentTime = TimeOnly.FromDateTime(DateTime.Now);
+            var currentDateTime = DateTime.Now;
+            var eventDateTime = eventItem.Date.ToDateTime(TimeOnly.MinValue).Add(eventItem.Time);
 
             // Check if the event has already finished
-            if (eventItem.Date < currentDate || (eventItem.Date == currentDate && eventItem.Time < currentTime))
+            if (eventDateTime <= currentDateTime)
             {
                 return (false, "This event has already finished, so ticket cancellation is not possible.");
             }
 
             // Check if the event is scheduled to start within the next 24 hours
-            var eventDateTime = eventItem.Date.ToDateTime(eventItem.Time);
-            var timeUntilEvent = eventDateTime - DateTime.Now;
+            var timeUntilEvent = eventDateTime - currentDateTime;
             if (timeUntilEvent <= TimeSpan.FromHours(24))
             {
                 return (false, $"The event is going to start in {timeUntilEvent.Hours} hours, so ticket cancellation is not possible.");

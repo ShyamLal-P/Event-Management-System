@@ -29,7 +29,8 @@ namespace EventManagementSystem.Services
                 throw new InvalidOperationException("Event not found.");
             }
 
-            return DateTime.Now >= eventItem.Date.ToDateTime(eventItem.Time);
+            var eventDateTime = eventItem.Date.ToDateTime(TimeOnly.MinValue).Add(eventItem.Time);
+            return DateTime.Now >= eventDateTime;
         }
 
         public async Task<string> GetTimeUntilEventStartsAsync(Guid eventId)
@@ -40,7 +41,8 @@ namespace EventManagementSystem.Services
                 throw new InvalidOperationException("Event not found.");
             }
 
-            var timeRemaining = eventItem.Date.ToDateTime(eventItem.Time) - DateTime.Now;
+            var eventDateTime = eventItem.Date.ToDateTime(TimeOnly.MinValue).Add(eventItem.Time);
+            var timeRemaining = eventDateTime - DateTime.Now;
 
             if (timeRemaining.TotalMinutes <= 0)
             {

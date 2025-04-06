@@ -20,10 +20,14 @@ builder.Services.AddControllers();
 //The below code if for making it access for the angular and frontend
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins",
-        builder => builder.AllowAnyOrigin()
-                          .AllowAnyMethod()
-                          .AllowAnyHeader());
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200") // Angular app origin
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .SetIsOriginAllowed(origin => true)
+              .AllowCredentials(); // if needed
+    });
 });
 
 
@@ -85,7 +89,9 @@ builder.Services.AddAuthentication(options =>
         ValidIssuer = builder.Configuration["JWT:Issuer"],
         ValidAudience = builder.Configuration["JWT:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+
+            RoleClaimType = "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
     };
 });
 
@@ -148,10 +154,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseRouting();
 
 // Use the CORS policy
-app.UseCors("AllowAllOrigins");
+app.UseCors("AllowFrontend");
+
+app.UseRouting();
 
 app.UseAuthentication(); //adding this line for authentication
 app.UseAuthorization();

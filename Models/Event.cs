@@ -1,6 +1,8 @@
-﻿using EventManagementSystem.Models;
+﻿using EventManagementSystem.Helpers;
+using EventManagementSystem.Models;
 using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace EventManagementSystem.Models
 {
@@ -11,7 +13,9 @@ namespace EventManagementSystem.Models
         public string Category { get; set; }
         public string Location { get; set; }
         public DateOnly Date { get; set; }
-        public TimeOnly Time { get; set; }
+
+        [JsonConverter(typeof(TimeOnlyJsonConverter))]
+        public TimeSpan Time { get; set; }
         public int TotalTickets { get; set; }
         public int AvailableTickets { get; set; }
         public double EventPrice { get; set; }

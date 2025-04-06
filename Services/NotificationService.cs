@@ -32,7 +32,9 @@ namespace EventManagementSystem.Services
             }
 
             var ticket = tickets.First(t => t.Status != "Cancelled");
-            var eventDateTime = ticket.Event.Date.ToDateTime(ticket.Event.Time);
+
+            // Combine DateOnly and TimeSpan for eventDateTime
+            var eventDateTime = ticket.Event.Date.ToDateTime(TimeOnly.MinValue).Add(ticket.Event.Time);
             var currentDateTime = DateTime.Now;
 
             if (currentDateTime < eventDateTime)

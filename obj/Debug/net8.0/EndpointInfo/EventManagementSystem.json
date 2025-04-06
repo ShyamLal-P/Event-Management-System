@@ -36,6 +36,18 @@
         }
       }
     },
+    "/api/Auth/me": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Auth/Login": {
       "post": {
         "tags": [
@@ -1055,7 +1067,7 @@
           },
           "time": {
             "type": "string",
-            "format": "time"
+            "format": "date-span"
           },
           "totalTickets": {
             "type": "integer",
