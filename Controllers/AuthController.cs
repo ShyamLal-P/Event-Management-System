@@ -59,7 +59,25 @@ namespace EventManagementSystem.Controllers
             return BadRequest(); // No message, just status 400
         }
 
+        [HttpGet("me")]
+        public async Task<IActionResult> GetCurrentUser()
+        {
+            var userId = User?.Claims?.FirstOrDefault(c => c.Type == "uid")?.Value;
 
+            if (userId == null)
+                return Unauthorized();
+
+            var user = await userManager.FindByIdAsync(userId);
+            if (user == null)
+                return NotFound();
+
+            return Ok(new
+            {
+                user.UserName,
+                user.Email,
+                user.PhoneNumber
+            });
+        }
 
         //Post: /api/Auth/Login
         [HttpPost]

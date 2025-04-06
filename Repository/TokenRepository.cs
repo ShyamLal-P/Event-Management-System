@@ -18,8 +18,12 @@ namespace EventManagementSystem.Repository
         public string CreateJWTToken(IdentityUser user, List<string> roles)
         {
             //Create Claims from the roles
-            var claims = new List<Claim>();
-            claims.Add(new Claim(ClaimTypes.Email, user.Email));
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim("uid", user.Id)
+            };
+
             foreach (var role in roles)
             {
                 claims.Add(new Claim(ClaimTypes.Role, role));
