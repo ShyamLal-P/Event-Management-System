@@ -1,4 +1,5 @@
 ﻿using EventManagementSystem.Interface;
+using EventManagementSystem.Models.Dtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,18 +17,26 @@ namespace EventManagementSystem.Controllers
         }
 
         // POST: api/Booking/BookTickets
-        [Authorize(Roles ="Admin, User")]
         [HttpPost("BookTickets")]
-        public async Task<IActionResult> BookTickets(Guid userId, Guid eventId, int numberOfTickets)
+        [Authorize(Roles = "Admin, User")]
+        public async Task<IActionResult> BookTickets([FromBody] BookTicketsRequest request)
         {
-            var result = await _ticketBookingService.BookTicketsAsync(userId, eventId, numberOfTickets);
-            if (!result)
+            try
             {
-                return BadRequest("Unable to book tickets. Either the event does not exist, there are not enough tickets available, or other business rules were violated.");
-            }
+                var result = await _ticketBookingService.BookTicketsAsync(request.UserId, request.EventId, request.NumberOfTickets);
+                if (!result)
+                {
+                    return BadRequest("Unable to book tickets. Either the event does not exist, not enough tickets are available, or other business rules were violated.");
+                }
 
-            var totalFare = await _ticketBookingService.CalculateTotalFareAsync(eventId, numberOfTickets);
-            return Ok(new { message = "Tickets booked successfully.", totalFare });
+                var totalFare = await _ticketBookingService.CalculateTotalFareAsync(request.EventId, request.NumberOfTickets);
+                return Ok(new { message = "Tickets booked successfully.", totalFare });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (add a logger if needed)
+                return StatusCode(500, $"Internal Server Error: {ex.Message}");
+            }
         }
     }
 }

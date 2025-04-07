@@ -73,6 +73,7 @@ namespace EventManagementSystem.Controllers
 
             return Ok(new
             {
+                id = user.Id,
                 user.UserName,
                 user.Email,
                 user.PhoneNumber

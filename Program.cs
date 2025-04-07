@@ -17,6 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 
+
 //The below code if for making it access for the angular and frontend
 builder.Services.AddCors(options =>
 {
@@ -141,6 +142,11 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
