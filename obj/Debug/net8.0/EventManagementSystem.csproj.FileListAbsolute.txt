@@ -144,7 +144,6 @@ C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.bui
 C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EventManagementSystem.props
 C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EventManagementSystem.props
 C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\EventMan.F6E82884.Up2Date
 C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\EventManagementSystem.dll
 C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\refint\EventManagementSystem.dll
@@ -312,3 +311,4 @@ D:\Github\Event-Management-System\obj\Debug\net8.0\EventManagementSystem.pdb
 D:\Github\Event-Management-System\obj\Debug\net8.0\EventManagementSystem.genruntimeconfig.cache
 D:\Github\Event-Management-System\obj\Debug\net8.0\ref\EventManagementSystem.dll
 D:\Github\Event-Management-System\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

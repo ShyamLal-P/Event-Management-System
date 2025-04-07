@@ -30,6 +30,10 @@ namespace EventManagementSystem.Repository
             _context.Events.Add(eventItem);
             await _context.SaveChangesAsync();
         }
+        public async Task<IEnumerable<Event>> GetEventsByOrganizerIdAsync(string organizerId)
+        {
+            return await _context.Events.Where(e => e.OrganizerId == organizerId).ToListAsync();
+        }
 
         public async Task UpdateEventAsync(Event eventItem)
         {

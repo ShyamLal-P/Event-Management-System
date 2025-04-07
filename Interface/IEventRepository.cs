@@ -11,5 +11,6 @@ namespace EventManagementSystem.Interface
         Task DeleteEventAsync(Guid id);
         bool EventExists(Guid id);
         void SetTotalTickets(Event eventEntity, int totalTickets);
+        Task<IEnumerable<Event>> GetEventsByOrganizerIdAsync(string organizerId);
     }
 }

@@ -25,6 +25,14 @@ namespace EventManagementSystem.Controllers
             return Ok(events);
         }
 
+        [Authorize(Roles = "User, Admin")]
+        [HttpGet("user/{organizerId}")]
+        public async Task<IActionResult> GetEventsByOrganizerId(string organizerId)
+        {
+            var events = await _eventRepository.GetEventsByOrganizerIdAsync(organizerId);
+            return Ok(events);
+        }
+
         // GET: api/Events/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Event>> GetEvent(Guid id)

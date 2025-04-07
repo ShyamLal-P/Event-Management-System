@@ -193,6 +193,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventManagementSystem.Controllers.EventController",
+    "Method": "GetEventsByOrganizerId",
+    "RelativePath": "api/Event/user/{organizerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "organizerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventManagementSystem.Controllers.EventFeedbackController",
     "Method": "PostFeedback",
     "RelativePath": "api/EventFeedback",
