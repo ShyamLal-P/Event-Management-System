@@ -311,4 +311,3 @@ D:\Github\Event-Management-System\obj\Debug\net8.0\EventManagementSystem.pdb
 D:\Github\Event-Management-System\obj\Debug\net8.0\EventManagementSystem.genruntimeconfig.cache
 D:\Github\Event-Management-System\obj\Debug\net8.0\ref\EventManagementSystem.dll
 D:\Github\Event-Management-System\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Curriculum\EventManagementSystem\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
