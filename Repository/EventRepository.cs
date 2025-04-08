@@ -53,8 +53,10 @@ namespace EventManagementSystem.Repository
         public async Task<IEnumerable<Event>> GetUpcomingEventsAsync()
         {
             var today = DateOnly.FromDateTime(DateTime.Today);
+            var currentTime = TimeOnly.FromDateTime(DateTime.Now);
+
             return await _context.Events
-                .Where(e => e.Date > today)
+                .Where(e => e.Date > today || (e.Date == today && e.Time > currentTime.ToTimeSpan()))
                 .ToListAsync();
         }
 
