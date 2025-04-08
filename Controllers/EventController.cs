@@ -45,6 +45,14 @@ namespace EventManagementSystem.Controllers
             return Ok(eventItem);
         }
 
+        [Authorize(Roles = "User, Admin")]
+        [HttpGet("upcoming")]
+        public async Task<ActionResult<IEnumerable<Event>>> GetUpcomingEvents()
+        {
+            var events = await _eventRepository.GetUpcomingEventsAsync();
+            return Ok(events);
+        }
+
         // POST: api/Events
         [Authorize(Roles ="Admin")]
         [HttpPost]

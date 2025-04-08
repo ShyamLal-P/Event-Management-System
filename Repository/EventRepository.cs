@@ -50,6 +50,13 @@ namespace EventManagementSystem.Repository
                 await _context.SaveChangesAsync();
             }
         }
+        public async Task<IEnumerable<Event>> GetUpcomingEventsAsync()
+        {
+            var today = DateOnly.FromDateTime(DateTime.Today);
+            return await _context.Events
+                .Where(e => e.Date > today)
+                .ToListAsync();
+        }
 
         public bool EventExists(Guid id)
         {
