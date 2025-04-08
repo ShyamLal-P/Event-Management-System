@@ -10,6 +10,7 @@ namespace EventManagementSystem.Interface
         Task UpdateTicketAsync(Ticket ticketItem);
         Task DeleteTicketAsync(Guid id);
         bool TicketExists(Guid id);
+        Task<IEnumerable<Ticket>> GetTicketsByUserIdAsync(string userId);
         Task<IEnumerable<Ticket>> GetTicketsByUserAndEventAsync(Guid userId, Guid eventId);
     }
 }

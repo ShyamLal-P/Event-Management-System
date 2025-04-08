@@ -1,6 +1,7 @@
 ﻿using EventManagementSystem.Models;
 using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace EventManagementSystem.Models
 {
@@ -14,7 +15,9 @@ namespace EventManagementSystem.Models
         public virtual ApplicationUser User { get; set; }
         public DateOnly BookingDate { get; set; }
         public string Status { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Notification>? Notifications { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Feedback>? Feedbacks { get; set; }
     }
 }

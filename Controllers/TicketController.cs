@@ -43,6 +43,15 @@ namespace EventManagementSystem.Controllers
             return Ok(ticketItem);
         }
 
+        // GET: api/Ticket/user/{userId}
+        [Authorize(Roles = "User, Admin")]
+        [HttpGet("user/{userId}")]
+        public async Task<ActionResult<IEnumerable<Ticket>>> GetTicketsByUserId(string userId)
+        {
+            var tickets = await _ticketRepository.GetTicketsByUserIdAsync(userId);
+            return Ok(tickets);
+        }
+
         // POST: api/Ticket
         /*[HttpPost]
         public async Task<ActionResult<Ticket>> PostTicket(Ticket ticketItem)
