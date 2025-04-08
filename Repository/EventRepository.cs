@@ -2,6 +2,10 @@
 using EventManagementSystem.Interface;
 using EventManagementSystem.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace EventManagementSystem.Repository
 {
@@ -30,6 +34,14 @@ namespace EventManagementSystem.Repository
             _context.Events.Add(eventItem);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<Event>> GetEventsByIdsAsync(List<Guid> eventIds)
+        {
+            return await _context.Events
+                .Where(e => eventIds.Contains(e.Id))
+                .ToListAsync();
+        }
+
         public async Task<IEnumerable<Event>> GetEventsByOrganizerIdAsync(string organizerId)
         {
             return await _context.Events.Where(e => e.OrganizerId == organizerId).ToListAsync();
@@ -50,6 +62,7 @@ namespace EventManagementSystem.Repository
                 await _context.SaveChangesAsync();
             }
         }
+
         public async Task<IEnumerable<Event>> GetUpcomingEventsAsync()
         {
             var today = DateOnly.FromDateTime(DateTime.Today);
@@ -71,4 +84,3 @@ namespace EventManagementSystem.Repository
         }
     }
 }
-

@@ -16,10 +16,12 @@ namespace EventManagementSystem.Controllers
     public class TicketController : ControllerBase
     {
         private readonly ITicketRepository _ticketRepository;
+        private readonly IEventRepository _eventRepository;
 
-        public TicketController(ITicketRepository ticketRepository)
+        public TicketController(ITicketRepository ticketRepository, IEventRepository eventRepository)
         {
             _ticketRepository = ticketRepository;
+            _eventRepository = eventRepository;
         }
 
         // GET: api/Ticket
@@ -52,31 +54,21 @@ namespace EventManagementSystem.Controllers
             return Ok(tickets);
         }
 
-        // POST: api/Ticket
-        /*[HttpPost]
-        public async Task<ActionResult<Ticket>> PostTicket(Ticket ticketItem)
+        // GET: api/Ticket/user/{userId}/events
+        [Authorize(Roles = "User, Admin")]
+        [HttpGet("user/{userId}/events")]
+        public async Task<ActionResult<IEnumerable<Event>>> GetEventsByUserId(string userId)
         {
-            await _ticketRepository.AddTicketAsync(ticketItem);
-            return CreatedAtAction(nameof(GetTicket), new { id = ticketItem.Id }, ticketItem);
-        }*/
-
-        // PUT: api/Ticket/5
-        /*[HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTicket(Guid id, [FromBody] Ticket ticketItem)
-        {
-            if (id != ticketItem.Id)
+            var tickets = await _ticketRepository.GetTicketsByUserIdAsync(userId);
+            if (tickets == null || !tickets.Any())
             {
-                return BadRequest("Ticket ID mismatch.");
+                return NotFound("No tickets found for this user.");
             }
 
-            if (!_ticketRepository.TicketExists(id))
-            {
-                return NotFound();
-            }
-
-            await _ticketRepository.UpdateTicketAsync(ticketItem);
-            return NoContent();
-        }*/
+            var eventIds = tickets.Select(t => t.EventId).Distinct().ToList();
+            var events = await _eventRepository.GetEventsByIdsAsync(eventIds);
+            return Ok(events);
+        }
 
         // DELETE: api/Ticket/5
         [HttpDelete("{id}")]

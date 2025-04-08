@@ -12,6 +12,7 @@ namespace EventManagementSystem.Interface
         bool EventExists(Guid id);
         Task<IEnumerable<Event>> GetUpcomingEventsAsync();
         void SetTotalTickets(Event eventEntity, int totalTickets);
+        Task<IEnumerable<Event>> GetEventsByIdsAsync(List<Guid> eventIds);
         Task<IEnumerable<Event>> GetEventsByOrganizerIdAsync(string organizerId);
     }
 }
