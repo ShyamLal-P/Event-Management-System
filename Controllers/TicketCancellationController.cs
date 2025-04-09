@@ -1,4 +1,5 @@
 ﻿using EventManagementSystem.Interface;
+using EventManagementSystem.Models.Dtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,15 +19,22 @@ namespace EventManagementSystem.Controllers
         // POST: api/TicketCancellation
         [Authorize(Roles = "Admin, User")]
         [HttpPost]
-        public async Task<IActionResult> CancelTickets(Guid userId, Guid eventId, int numberOfTickets)
+        public async Task<IActionResult> CancelTickets([FromBody] CancelTicketsRequest request)
         {
-            var (success, message) = await _ticketCancellationService.CancelTicketsAsync(userId, eventId, numberOfTickets);
+            var (success, message) = await _ticketCancellationService.CancelTicketsAsync(request.UserId, request.EventId, request.NumberOfTickets);
             if (success)
             {
-                var refundAmount = await _ticketCancellationService.CalculateRefundAmountAsync(eventId, numberOfTickets);
+                var refundAmount = await _ticketCancellationService.CalculateRefundAmountAsync(request.EventId, request.NumberOfTickets);
                 return Ok(new { message, refundAmount });
             }
             return BadRequest(new { message });
+        }
+
+        // OPTIONS: api/TicketCancellation
+        [HttpOptions]
+        public IActionResult Preflight()
+        {
+            return Ok();
         }
     }
 }

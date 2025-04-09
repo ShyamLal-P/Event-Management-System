@@ -184,6 +184,26 @@
   },
   {
     "ContainingType": "EventManagementSystem.Controllers.EventController",
+    "Method": "GetTopEventsByBookingRatio",
+    "RelativePath": "api/Event/top-events",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementSystem.Models.Event, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EventManagementSystem.Controllers.EventController",
     "Method": "GetUpcomingEvents",
     "RelativePath": "api/Event/upcoming",
     "HttpMethod": "GET",
@@ -616,21 +636,21 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "eventId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "numberOfTickets",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "EventManagementSystem.Models.Dtos.CancelTicketsRequest",
+        "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementSystem.Controllers.TicketCancellationController",
+    "Method": "Preflight",
+    "RelativePath": "api/TicketCancellation",
+    "HttpMethod": "OPTIONS",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

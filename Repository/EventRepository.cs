@@ -82,5 +82,12 @@ namespace EventManagementSystem.Repository
         {
             eventEntity.SetTotalTickets(totalTickets);
         }
+        public async Task<IEnumerable<Event>> GetTopEventsByBookingRatioAsync()
+        {
+            return await _context.Events
+                .OrderByDescending(e => (e.TotalTickets - e.AvailableTickets) / (double)e.TotalTickets)
+                .Take(5)
+                .ToListAsync();
+        }
     }
 }

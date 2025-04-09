@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Curriculum\\EventManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\repository\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,44 +62,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
+              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventController.cs",
+              "RelativeToolTip": "Controllers\\EventController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAqwD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T11:57:52.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "EventRepository.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Repository\\EventRepository.cs",
               "RelativeDocumentMoniker": "Repository\\EventRepository.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Repository\\EventRepository.cs",
               "RelativeToolTip": "Repository\\EventRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAD4v1kAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T10:19:59.836Z"
+              "WhenOpened": "2025-04-08T10:19:59.836Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "IEventRepository.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Interface\\IEventRepository.cs",
               "RelativeDocumentMoniker": "Interface\\IEventRepository.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Interface\\IEventRepository.cs",
               "RelativeToolTip": "Interface\\IEventRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wA0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T10:21:44.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TicketController.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\TicketController.cs",
               "RelativeDocumentMoniker": "Controllers\\TicketController.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\TicketController.cs",
               "RelativeToolTip": "Controllers\\TicketController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAwFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAmwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T06:28:27.668Z"
+              "WhenOpened": "2025-04-08T06:28:27.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ITicketRepository.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Interface\\ITicketRepository.cs",
               "RelativeDocumentMoniker": "Interface\\ITicketRepository.cs",
@@ -107,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "TicketRepository.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Repository\\TicketRepository.cs",
               "RelativeDocumentMoniker": "Repository\\TicketRepository.cs",
@@ -119,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Ticket.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Models\\Ticket.cs",
               "RelativeDocumentMoniker": "Models\\Ticket.cs",
@@ -131,19 +150,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T17:02:57.901Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "EventFeedbackController.cs",
               "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventFeedbackController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventFeedbackController.cs",
