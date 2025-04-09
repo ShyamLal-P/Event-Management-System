@@ -1251,6 +1251,11 @@
         "additionalProperties": false
       },
       "CancelTicketsRequest": {
+        "required": [
+          "eventId",
+          "numberOfTickets",
+          "userId"
+        ],
         "type": "object",
         "properties": {
           "userId": {
@@ -1262,6 +1267,8 @@
             "format": "uuid"
           },
           "numberOfTickets": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           }

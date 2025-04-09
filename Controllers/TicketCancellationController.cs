@@ -21,6 +21,11 @@ namespace EventManagementSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> CancelTickets([FromBody] CancelTicketsRequest request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState); // This will return detailed error info
+            }
+
             var (success, message) = await _ticketCancellationService.CancelTicketsAsync(request.UserId, request.EventId, request.NumberOfTickets);
             if (success)
             {
