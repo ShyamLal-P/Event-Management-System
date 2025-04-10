@@ -84,7 +84,11 @@ namespace EventManagementSystem.Repository
         }
         public async Task<IEnumerable<Event>> GetTopEventsByBookingRatioAsync()
         {
+            var currentDate = DateOnly.FromDateTime(DateTime.Now);
+            var currentTime = DateTime.Now.TimeOfDay; // Use TimeSpan for current time
+
             return await _context.Events
+                .Where(e => e.Date > currentDate || (e.Date == currentDate && e.Time > currentTime))
                 .OrderByDescending(e => (e.TotalTickets - e.AvailableTickets) / (double)e.TotalTickets)
                 .Take(5)
                 .ToListAsync();

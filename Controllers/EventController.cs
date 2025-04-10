@@ -54,6 +54,7 @@ namespace EventManagementSystem.Controllers
         }
 
 
+
         [Authorize(Roles = "User, Admin")]
         [HttpGet("top-events")]
         public async Task<ActionResult<IEnumerable<Event>>> GetTopEventsByBookingRatio()
@@ -61,6 +62,7 @@ namespace EventManagementSystem.Controllers
             var events = await _eventRepository.GetTopEventsByBookingRatioAsync();
             return Ok(events);
         }
+
 
         // POST: api/Events
         [Authorize(Roles ="Admin")]
