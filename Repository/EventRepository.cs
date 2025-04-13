@@ -89,7 +89,10 @@ namespace EventManagementSystem.Repository
 
             return await _context.Events
                 .Where(e => e.Date > currentDate || (e.Date == currentDate && e.Time > currentTime))
-                .OrderByDescending(e => (e.TotalTickets - e.AvailableTickets) / (double)e.TotalTickets)
+                .OrderByDescending(e =>
+                    e.TotalTickets > 0 ?
+                    (e.TotalTickets - e.AvailableTickets) / (double)e.TotalTickets : 0
+                )
                 .Take(5)
                 .ToListAsync();
         }

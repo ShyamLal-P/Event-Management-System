@@ -75,6 +75,7 @@ namespace EventManagementSystem.Controllers
         }
 
         // PUT: api/Events/5
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateEvent(Guid id, [FromBody] Event eventItem)
         {
@@ -112,6 +113,7 @@ namespace EventManagementSystem.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         // DELETE: api/Events/5
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEvent(Guid id)
         {

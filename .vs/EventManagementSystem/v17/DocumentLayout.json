@@ -1,61 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Curriculum\\EventManagementSystem\\",
+  "WorkspaceRootPath": "D:\\Github\\Event-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\models\\dtos\\cancelticketsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\dtos\\cancelticketsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\dtos\\cancelticketsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\models\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\ticketcancellationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\ticketcancellationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\ticketcancellationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\ticketcancellationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\services\\ticketcancellationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\ticketcancellationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\models\\dtos\\bookticketsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\dtos\\bookticketsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\dtos\\bookticketsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\controllers\\eventfeedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\eventfeedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventfeedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\services\\averageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\services\\averageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\averageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|c:\\curriculum\\eventmanagementsystem\\interface\\iaverageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\interface\\iaverageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\iaverageratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -66,8 +66,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\Dtos\\RegisterRequestDto.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Dtos\\RegisterRequestDto.cs",
+              "RelativeToolTip": "Models\\Dtos\\RegisterRequestDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T11:03:15.633Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEIAAAAA1lprrbUWwEsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T11:06:44.459Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -82,74 +108,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterRequestDto.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Models\\Dtos\\RegisterRequestDto.cs",
-              "RelativeDocumentMoniker": "Models\\Dtos\\RegisterRequestDto.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Models\\Dtos\\RegisterRequestDto.cs",
-              "RelativeToolTip": "Models\\Dtos\\RegisterRequestDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T11:03:15.633Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEIAAAAA1lprrbUWwEsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T11:06:44.459Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CancelTicketsRequest.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Models\\Dtos\\CancelTicketsRequest.cs",
-              "RelativeDocumentMoniker": "Models\\Dtos\\CancelTicketsRequest.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Models\\Dtos\\CancelTicketsRequest.cs",
-              "RelativeToolTip": "Models\\Dtos\\CancelTicketsRequest.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T17:06:13.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TicketCancellationController.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\TicketCancellationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TicketCancellationController.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\TicketCancellationController.cs",
-              "RelativeToolTip": "Controllers\\TicketCancellationController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAuwCMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T17:04:31.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TicketCancellationService.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Services\\TicketCancellationService.cs",
-              "RelativeDocumentMoniker": "Services\\TicketCancellationService.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\TicketCancellationService.cs",
-              "RelativeToolTip": "Services\\TicketCancellationService.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAuwEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T16:48:27.246Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Program.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Program.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAAAAJQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -159,9 +122,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "BookingController.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\BookingController.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\BookingController.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\BookingController.cs",
               "RelativeToolTip": "Controllers\\BookingController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -169,11 +132,73 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Repository\\EventRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\EventRepository.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Repository\\EventRepository.cs",
+              "RelativeToolTip": "Repository\\EventRepository.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAgwGAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T04:41:55.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\EventController.cs",
+              "RelativeToolTip": "Controllers\\EventController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAE0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T05:01:07.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TicketCancellationService.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Services\\TicketCancellationService.cs",
+              "RelativeDocumentMoniker": "Services\\TicketCancellationService.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Services\\TicketCancellationService.cs",
+              "RelativeToolTip": "Services\\TicketCancellationService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAuwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:48:27.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TicketCancellationController.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\TicketCancellationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TicketCancellationController.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\TicketCancellationController.cs",
+              "RelativeToolTip": "Controllers\\TicketCancellationController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T17:04:31.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CancelTicketsRequest.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\CancelTicketsRequest.cs",
+              "RelativeDocumentMoniker": "Models\\Dtos\\CancelTicketsRequest.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Dtos\\CancelTicketsRequest.cs",
+              "RelativeToolTip": "Models\\Dtos\\CancelTicketsRequest.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T17:06:13.879Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "BookTicketsRequest.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Models\\Dtos\\BookTicketsRequest.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\BookTicketsRequest.cs",
               "RelativeDocumentMoniker": "Models\\Dtos\\BookTicketsRequest.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Models\\Dtos\\BookTicketsRequest.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Dtos\\BookTicketsRequest.cs",
               "RelativeToolTip": "Models\\Dtos\\BookTicketsRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -181,24 +206,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventController.cs",
-              "RelativeToolTip": "Controllers\\EventController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAqwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T05:01:07.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
               "Title": "IEventRepository.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Interface\\IEventRepository.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Interface\\IEventRepository.cs",
               "RelativeDocumentMoniker": "Interface\\IEventRepository.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Interface\\IEventRepository.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Interface\\IEventRepository.cs",
               "RelativeToolTip": "Interface\\IEventRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwA0AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -206,24 +218,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EventRepository.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Repository\\EventRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\EventRepository.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Repository\\EventRepository.cs",
-              "RelativeToolTip": "Repository\\EventRepository.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAIwF4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T04:41:55.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
               "Title": "AverageRatingService.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Services\\AverageRatingService.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Services\\AverageRatingService.cs",
               "RelativeDocumentMoniker": "Services\\AverageRatingService.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Services\\AverageRatingService.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Services\\AverageRatingService.cs",
               "RelativeToolTip": "Services\\AverageRatingService.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -233,9 +232,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "IAverageRatingService.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Interface\\IAverageRatingService.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Interface\\IAverageRatingService.cs",
               "RelativeDocumentMoniker": "Interface\\IAverageRatingService.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Interface\\IAverageRatingService.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Interface\\IAverageRatingService.cs",
               "RelativeToolTip": "Interface\\IAverageRatingService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -245,9 +244,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "EventFeedbackController.cs",
-              "DocumentMoniker": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventFeedbackController.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\EventFeedbackController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventFeedbackController.cs",
-              "ToolTip": "C:\\Curriculum\\EventManagementSystem\\Controllers\\EventFeedbackController.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\EventFeedbackController.cs",
               "RelativeToolTip": "Controllers\\EventFeedbackController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAwBIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
