@@ -273,29 +273,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "eventId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "userId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ticketId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "rating",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "comments",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "feedbackRequest",
+        "Type": "EventManagementSystem.Models.Dtos.FeedbackRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -319,6 +299,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "EventManagementSystem.Controllers.FeedbackController",
+    "Method": "PostFeedback",
+    "RelativePath": "api/Feedback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feedback",
+        "Type": "EventManagementSystem.Models.Feedback",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "EventManagementSystem.Controllers.FeedbackController",

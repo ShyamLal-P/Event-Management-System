@@ -18,8 +18,5 @@ namespace EventManagementSystem.Models
         public string Comments { get; set; }
         public TimeOnly SubmittedTime { get; set; }
         public DateOnly SubmittedDate { get; set; }
-        public Guid TicketId { get; set; } // Foreign key to Ticket
-        [ForeignKey("TicketId")]
-        public virtual Ticket Ticket { get; set; }
     }
 }

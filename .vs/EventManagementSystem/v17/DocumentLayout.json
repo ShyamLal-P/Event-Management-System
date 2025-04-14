@@ -3,44 +3,80 @@
   "WorkspaceRootPath": "D:\\Github\\Event-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\dtos\\pasteventfeedbackcheckrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\dtos\\pasteventfeedbackcheckrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\eventfeedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventfeedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\repository\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\dtos\\feedbackrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\dtos\\feedbackrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\interface\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\repository\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\interface\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\interface\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\migrations\\20250414141850_removed ticket id in feedback1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:migrations\\20250414141850_removed ticket id in feedback1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\migrations\\20250414141513_removed ticket id in feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:migrations\\20250414141513_removed ticket id in feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\data\\eventmanagementsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:data\\eventmanagementsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\dtos\\pasteventfeedbackcheckrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:models\\dtos\\pasteventfeedbackcheckrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\repository\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:repository\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\interface\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|solutionrelative:interface\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF2740F9-95A4-4755-AFCA-406057EDDE7F}|EventManagementSystem.csproj|d:\\github\\event-management-system\\models\\dtos\\cancelticketsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -93,6 +129,32 @@
           "SelectedChildIndex": 7,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\Dtos\\RegisterRequestDto.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Dtos\\RegisterRequestDto.cs",
+              "RelativeToolTip": "Models\\Dtos\\RegisterRequestDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T11:03:15.633Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEIAAAAA1lprrbUWwEsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T11:06:44.459Z",
+              "IsPinned": true
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
@@ -106,106 +168,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterRequestDto.cs",
-              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\RegisterRequestDto.cs",
-              "RelativeDocumentMoniker": "Models\\Dtos\\RegisterRequestDto.cs",
-              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Dtos\\RegisterRequestDto.cs",
-              "RelativeToolTip": "Models\\Dtos\\RegisterRequestDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T11:03:15.633Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEIAAAAA1lprrbUWwEsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T11:06:44.459Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PastEventFeedbackCheckRequestDto.cs",
-              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\PastEventFeedbackCheckRequestDto.cs",
-              "RelativeDocumentMoniker": "Models\\Dtos\\PastEventFeedbackCheckRequestDto.cs",
-              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Dtos\\PastEventFeedbackCheckRequestDto.cs",
-              "RelativeToolTip": "Models\\Dtos\\PastEventFeedbackCheckRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T08:14:24.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IEventRepository.cs",
-              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Interface\\IEventRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\IEventRepository.cs",
-              "ToolTip": "D:\\Github\\Event-Management-System\\Interface\\IEventRepository.cs",
-              "RelativeToolTip": "Interface\\IEventRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvxAAAABSAAAAAAAAAA==",
+              "Title": "FeedbackRepository.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Repository\\FeedbackRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\FeedbackRepository.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Repository\\FeedbackRepository.cs",
+              "RelativeToolTip": "Repository\\FeedbackRepository.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T05:00:28.5Z",
+              "WhenOpened": "2025-04-14T06:59:49.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EventController.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventController.cs",
               "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\EventController.cs",
               "RelativeToolTip": "Controllers\\EventController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAHAAAACEAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAA8wHAAAACEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T05:01:07.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EventRepository.cs",
-              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Repository\\EventRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\EventRepository.cs",
-              "ToolTip": "D:\\Github\\Event-Management-System\\Repository\\EventRepository.cs",
-              "RelativeToolTip": "Repository\\EventRepository.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAqwGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T04:41:55.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "EventFeedbackController.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\EventFeedbackController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventFeedbackController.cs",
               "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\EventFeedbackController.cs",
               "RelativeToolTip": "Controllers\\EventFeedbackController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBIAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAADwvzcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T10:25:30.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TicketRepository.cs",
-              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Repository\\TicketRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\TicketRepository.cs",
-              "ToolTip": "D:\\Github\\Event-Management-System\\Repository\\TicketRepository.cs",
-              "RelativeToolTip": "Repository\\TicketRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAADgvy8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FeedbackRequest.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\FeedbackRequest.cs",
+              "RelativeDocumentMoniker": "Models\\Dtos\\FeedbackRequest.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Dtos\\FeedbackRequest.cs",
+              "RelativeToolTip": "Models\\Dtos\\FeedbackRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T07:16:38.314Z",
+              "WhenOpened": "2025-04-14T15:01:26.408Z",
               "EditorCaption": ""
             },
             {
@@ -216,27 +226,180 @@
               "RelativeDocumentMoniker": "Controllers\\FeedbackController.cs",
               "ToolTip": "D:\\Github\\Event-Management-System\\Controllers\\FeedbackController.cs",
               "RelativeToolTip": "Controllers\\FeedbackController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAAFsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwD8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T07:23:37.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
+              "Title": "FeedbackService.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Services\\FeedbackService.cs",
+              "RelativeDocumentMoniker": "Services\\FeedbackService.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Services\\FeedbackService.cs",
+              "RelativeToolTip": "Services\\FeedbackService.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAAI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:07:36.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IFeedbackService.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Interface\\IFeedbackService.cs",
+              "RelativeDocumentMoniker": "Interface\\IFeedbackService.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Interface\\IFeedbackService.cs",
+              "RelativeToolTip": "Interface\\IFeedbackService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:13:20.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IFeedbackRepository.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Interface\\IFeedbackRepository.cs",
               "RelativeDocumentMoniker": "Interface\\IFeedbackRepository.cs",
               "ToolTip": "D:\\Github\\Event-Management-System\\Interface\\IFeedbackRepository.cs",
               "RelativeToolTip": "Interface\\IFeedbackRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T07:01:23.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
+              "Title": "20250414141850_removed ticket id in feedback1.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Migrations\\20250414141850_removed ticket id in feedback1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250414141850_removed ticket id in feedback1.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Migrations\\20250414141850_removed ticket id in feedback1.cs",
+              "RelativeToolTip": "Migrations\\20250414141850_removed ticket id in feedback1.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:19:01.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250414141513_removed ticket id in feedback.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Migrations\\20250414141513_removed ticket id in feedback.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250414141513_removed ticket id in feedback.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Migrations\\20250414141513_removed ticket id in feedback.cs",
+              "RelativeToolTip": "Migrations\\20250414141513_removed ticket id in feedback.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:16:27.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "Models\\Feedback.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Feedback.cs",
+              "RelativeToolTip": "Models\\Feedback.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:03:54.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "Models\\Ticket.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Ticket.cs",
+              "RelativeToolTip": "Models\\Ticket.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:03:40.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EventManagementSystemDbContext.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Data\\EventManagementSystemDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\EventManagementSystemDbContext.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Data\\EventManagementSystemDbContext.cs",
+              "RelativeToolTip": "Data\\EventManagementSystemDbContext.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAhwEUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:05:12.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Repository\\EventRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\EventRepository.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Repository\\EventRepository.cs",
+              "RelativeToolTip": "Repository\\EventRepository.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAawF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T04:41:55.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "Models\\Notification.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Notification.cs",
+              "RelativeToolTip": "Models\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:03:40.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PastEventFeedbackCheckRequestDto.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\PastEventFeedbackCheckRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\Dtos\\PastEventFeedbackCheckRequestDto.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Models\\Dtos\\PastEventFeedbackCheckRequestDto.cs",
+              "RelativeToolTip": "Models\\Dtos\\PastEventFeedbackCheckRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T08:14:24.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IEventRepository.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Interface\\IEventRepository.cs",
+              "RelativeDocumentMoniker": "Interface\\IEventRepository.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Interface\\IEventRepository.cs",
+              "RelativeToolTip": "Interface\\IEventRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxAAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T05:00:28.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TicketRepository.cs",
+              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Repository\\TicketRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\TicketRepository.cs",
+              "ToolTip": "D:\\Github\\Event-Management-System\\Repository\\TicketRepository.cs",
+              "RelativeToolTip": "Repository\\TicketRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADgvy8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T07:16:38.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "ITicketRepository.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Interface\\ITicketRepository.cs",
               "RelativeDocumentMoniker": "Interface\\ITicketRepository.cs",
@@ -244,25 +407,11 @@
               "RelativeToolTip": "Interface\\ITicketRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T07:21:51.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T07:21:51.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FeedbackRepository.cs",
-              "DocumentMoniker": "D:\\Github\\Event-Management-System\\Repository\\FeedbackRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\FeedbackRepository.cs",
-              "ToolTip": "D:\\Github\\Event-Management-System\\Repository\\FeedbackRepository.cs",
-              "RelativeToolTip": "Repository\\FeedbackRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T06:59:49.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "BookingController.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
@@ -274,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -286,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "TicketCancellationService.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Services\\TicketCancellationService.cs",
               "RelativeDocumentMoniker": "Services\\TicketCancellationService.cs",
@@ -298,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "TicketCancellationController.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Controllers\\TicketCancellationController.cs",
               "RelativeDocumentMoniker": "Controllers\\TicketCancellationController.cs",
@@ -310,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "CancelTicketsRequest.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\CancelTicketsRequest.cs",
               "RelativeDocumentMoniker": "Models\\Dtos\\CancelTicketsRequest.cs",
@@ -322,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "BookTicketsRequest.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Models\\Dtos\\BookTicketsRequest.cs",
               "RelativeDocumentMoniker": "Models\\Dtos\\BookTicketsRequest.cs",
@@ -334,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "AverageRatingService.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Services\\AverageRatingService.cs",
               "RelativeDocumentMoniker": "Services\\AverageRatingService.cs",
@@ -346,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "IAverageRatingService.cs",
               "DocumentMoniker": "D:\\Github\\Event-Management-System\\Interface\\IAverageRatingService.cs",
               "RelativeDocumentMoniker": "Interface\\IAverageRatingService.cs",

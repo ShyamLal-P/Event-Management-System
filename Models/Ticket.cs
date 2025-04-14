@@ -17,7 +17,5 @@ namespace EventManagementSystem.Models
         public string Status { get; set; }
         [JsonIgnore]
         public virtual ICollection<Notification>? Notifications { get; set; }
-        [JsonIgnore]
-        public virtual ICollection<Feedback>? Feedbacks { get; set; }
     }
 }

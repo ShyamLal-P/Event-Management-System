@@ -4,6 +4,7 @@ using EventManagementSystem.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventManagementSystem.Migrations
 {
     [DbContext(typeof(EventManagementSystemDbContext))]
-    partial class EventManagementSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250414141513_removed ticket id in feedback")]
+    partial class removedticketidinfeedback
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -88,6 +91,9 @@ namespace EventManagementSystem.Migrations
                     b.Property<TimeOnly>("SubmittedTime")
                         .HasColumnType("time");
 
+                    b.Property<Guid?>("TicketId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -95,6 +101,8 @@ namespace EventManagementSystem.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("EventId");
+
+                    b.HasIndex("TicketId");
 
                     b.HasIndex("UserId");
 
@@ -413,6 +421,10 @@ namespace EventManagementSystem.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
+                    b.HasOne("EventManagementSystem.Models.Ticket", null)
+                        .WithMany("Feedbacks")
+                        .HasForeignKey("TicketId");
+
                     b.HasOne("EventManagementSystem.Models.ApplicationUser", "User")
                         .WithMany("Feedbacks")
                         .HasForeignKey("UserId")
@@ -532,6 +544,8 @@ namespace EventManagementSystem.Migrations
 
             modelBuilder.Entity("EventManagementSystem.Models.Ticket", b =>
                 {
+                    b.Navigation("Feedbacks");
+
                     b.Navigation("Notifications");
                 });
 

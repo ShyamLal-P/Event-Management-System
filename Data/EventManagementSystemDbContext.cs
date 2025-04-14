@@ -69,12 +69,6 @@ namespace EventManagementSystem.Data
                 .HasForeignKey(f => f.EventId)
                 .OnDelete(DeleteBehavior.NoAction);
 
-            builder.Entity<Feedback>()
-                .HasOne(f => f.Ticket)
-                .WithMany(t => t.Feedbacks)
-                .HasForeignKey(f => f.TicketId)
-                .OnDelete(DeleteBehavior.NoAction);
-
             //Seedind Roles
             var userRoleId = "0b5893d6-0fd7-41cf-af15-c3a293a4225d";
             var adminRoleId = "634976c3-ccd8-44ef-9549-f2cfa7195732";

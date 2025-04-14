@@ -48,13 +48,20 @@ namespace EventManagementSystem.Controllers
             return Ok(feedbackItem);
         }
 
-        // POST: api/Feedback
-        /*[Authorize(Roles = "User, Admin")]
+        [Authorize(Roles = "User, Admin")]
         [HttpPost]
-        public async Task<IActionResult> PostFeedback([FromQuery] Guid eventId, [FromQuery] int rating, [FromQuery] string comments)
+        public async Task<IActionResult> PostFeedback([FromBody] Feedback feedback)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var result = await _feedbackService.PostFeedbackAsync(userId, eventId, rating, comments);
+
+            // Ensure feedback is valid and has all necessary information
+            if (feedback == null || string.IsNullOrEmpty(feedback.Comments) || feedback.Rating < 1 || feedback.Rating > 5)
+            {
+                return BadRequest("Invalid feedback data.");
+            }
+
+            // Save feedback through the service layer
+            var result = await _feedbackService.PostFeedbackAsync(userId, feedback.EventId, feedback.Rating, feedback.Comments);
 
             if (result == "Feedback posted successfully.")
             {
@@ -62,7 +69,7 @@ namespace EventManagementSystem.Controllers
             }
 
             return BadRequest(result);
-        }*/
+        }
 
         // PUT: api/Feedback/5
         [Authorize(Roles = "User, Admin")]

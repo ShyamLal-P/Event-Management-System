@@ -1,5 +1,6 @@
 ﻿using EventManagementSystem.Interface;
 using EventManagementSystem.Models;
+using EventManagementSystem.Models.Dtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,31 +17,31 @@ namespace EventManagementSystem.Controllers
             _feedbackService = feedbackService;
         }
 
-        [Authorize(Roles ="User, Admin")]
+        [Authorize(Roles = "User, Admin")]
         [HttpPost]
-        public async Task<IActionResult> PostFeedback(Guid eventId, string userId, Guid ticketId, int rating, string comments)
+        public async Task<IActionResult> PostFeedback([FromBody] FeedbackRequest feedbackRequest)
         {
-            if (rating < 1 || rating > 5)
+            if (feedbackRequest.Rating < 1 || feedbackRequest.Rating > 5)
             {
                 return BadRequest("Rating must be between 1 and 5.");
             }
 
-            var hasBookedTicket = await _feedbackService.UserHasBookedTicketAsync(eventId, userId);
+            var hasBookedTicket = await _feedbackService.UserHasBookedTicketAsync(feedbackRequest.EventId, feedbackRequest.UserId);
             if (!hasBookedTicket)
             {
                 return BadRequest("User is not registered for the event or does not have a booked ticket.");
             }
 
-            var isEventStarted = await _feedbackService.IsEventStartedAsync(eventId);
+            var isEventStarted = await _feedbackService.IsEventStartedAsync(feedbackRequest.EventId);
             if (!isEventStarted)
             {
-                var timeUntilEventStarts = await _feedbackService.GetTimeUntilEventStartsAsync(eventId);
+                var timeUntilEventStarts = await _feedbackService.GetTimeUntilEventStartsAsync(feedbackRequest.EventId);
                 return BadRequest($"Feedback will be enabled after the event starts. Time remaining: {timeUntilEventStarts}");
             }
 
             try
             {
-                await _feedbackService.SubmitFeedbackAsync(eventId, userId, ticketId, rating, comments);
+                await _feedbackService.SubmitFeedbackAsync(feedbackRequest.EventId, feedbackRequest.UserId, feedbackRequest.Rating, feedbackRequest.Comments);
             }
             catch (InvalidOperationException ex)
             {
@@ -51,3 +52,4 @@ namespace EventManagementSystem.Controllers
         }
     }
 }
+

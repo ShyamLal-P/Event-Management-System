@@ -1,18 +1,22 @@
 ﻿using EventManagementSystem.Data;
 using EventManagementSystem.Interface;
 using EventManagementSystem.Models;
-using Microsoft.AspNetCore.Identity;
+using EventManagementSystem.Repository;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Threading.Tasks;
 
 namespace EventManagementSystem.Services
 {
     public class FeedbackService : IFeedbackService
     {
         private readonly EventManagementSystemDbContext _context;
+        private readonly IFeedbackRepository _feedbackRepository;
 
-        public FeedbackService(EventManagementSystemDbContext context)
+        public FeedbackService(EventManagementSystemDbContext context, IFeedbackRepository feedbackRepository)
         {
             _context = context;
+            _feedbackRepository = feedbackRepository;
         }
 
         public async Task<bool> UserHasBookedTicketAsync(Guid eventId, string userId)
@@ -31,6 +35,37 @@ namespace EventManagementSystem.Services
 
             var eventDateTime = eventItem.Date.ToDateTime(TimeOnly.MinValue).Add(eventItem.Time);
             return DateTime.Now >= eventDateTime;
+        }
+
+        public async Task<string> PostFeedbackAsync(string userId, Guid eventId, int rating, string comments)
+        {
+            // Check if the user has booked the event
+            var hasBookedTicket = await UserHasBookedTicketAsync(eventId, userId);
+            if (!hasBookedTicket)
+            {
+                return "User must book a ticket to submit feedback.";
+            }
+
+            // Optional: Check if feedback already exists for this event by this user
+            var existingFeedback = await _feedbackRepository.GetAllFeedbacksAsync();
+            if (existingFeedback.Any(f => f.EventId == eventId && f.UserId == userId))
+            {
+                return "Feedback already submitted for this event by the user.";
+            }
+
+            var feedback = new Feedback
+            {
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                EventId = eventId,
+                Rating = rating,
+                Comments = comments,
+                SubmittedTime = TimeOnly.FromDateTime(DateTime.UtcNow),
+                SubmittedDate = DateOnly.FromDateTime(DateTime.UtcNow)
+            };
+
+            await _feedbackRepository.AddFeedbackAsync(feedback);
+            return "Feedback posted successfully.";
         }
 
         public async Task<string> GetTimeUntilEventStartsAsync(Guid eventId)
@@ -69,24 +104,24 @@ namespace EventManagementSystem.Services
             return $"{minutes} minutes";
         }
 
-        public async Task SubmitFeedbackAsync(Guid eventId, string userId, Guid ticketId, int rating, string comments)
+        public async Task SubmitFeedbackAsync(Guid eventId, string userId, int rating, string comments)
         {
-            // Check if the ticket exists and is booked
-            var ticket = await _context.Tickets
-                .FirstOrDefaultAsync(t => t.Id == ticketId && t.Status == "booked");
+            // Check if the user has a valid booked ticket for the event
+            var hasBookedTicket = await _context.Tickets
+                .AnyAsync(t => t.EventId == eventId && t.UserId == userId && t.Status == "booked");
 
-            if (ticket == null)
+            if (!hasBookedTicket)
             {
-                throw new InvalidOperationException("Ticket not found or not booked.");
+                throw new InvalidOperationException("User has not booked a ticket for this event.");
             }
 
-            // Check if feedback already exists for the ticket
+            // Optional: Check if feedback already exists for this event by this user
             var existingFeedback = await _context.Feedbacks
-                .AnyAsync(f => f.TicketId == ticketId);
+                .AnyAsync(f => f.EventId == eventId && f.UserId == userId);
 
             if (existingFeedback)
             {
-                throw new InvalidOperationException("Feedback already submitted for this ticket.");
+                throw new InvalidOperationException("Feedback already submitted for this event by the user.");
             }
 
             var feedback = new Feedback
@@ -97,18 +132,11 @@ namespace EventManagementSystem.Services
                 Rating = rating,
                 Comments = comments,
                 SubmittedTime = TimeOnly.FromDateTime(DateTime.Now),
-                SubmittedDate = DateOnly.FromDateTime(DateTime.Now),
-                TicketId = ticketId
+                SubmittedDate = DateOnly.FromDateTime(DateTime.Now)
             };
 
             _context.Feedbacks.Add(feedback);
             await _context.SaveChangesAsync();
-        }
-
-        public async Task<bool> FeedbackExistsForTicketAsync(Guid ticketId)
-        {
-            return await _context.Feedbacks
-                .AnyAsync(f => f.TicketId == ticketId);
         }
     }
 }

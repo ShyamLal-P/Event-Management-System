@@ -91,7 +91,6 @@ namespace EventManagementSystem.Repository
             var events = await _context.Tickets
                 .Where(t => t.UserId == userId &&
                             !_context.Feedbacks.Any(f =>
-                                f.TicketId == t.Id &&
                                 f.UserId == userId &&
                                 f.EventId == t.EventId))
                 .Select(t => t.Event)
