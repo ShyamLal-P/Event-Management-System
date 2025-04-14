@@ -82,6 +82,26 @@ namespace EventManagementSystem.Repository
         {
             eventEntity.SetTotalTickets(totalTickets);
         }
+
+        public async Task<IEnumerable<Event>> GetPastEventsWithoutFeedbackAsync(string userId)
+        {
+            var currentDate = DateOnly.FromDateTime(DateTime.Now);
+            var currentTime = DateTime.Now.TimeOfDay;
+
+            var events = await _context.Tickets
+                .Where(t => t.UserId == userId &&
+                            !_context.Feedbacks.Any(f =>
+                                f.TicketId == t.Id &&
+                                f.UserId == userId &&
+                                f.EventId == t.EventId))
+                .Select(t => t.Event)
+                .Where(e => e.Date < currentDate || (e.Date == currentDate && e.Time < currentTime))
+                .Distinct()
+                .ToListAsync();
+
+            return events;
+        }
+
         public async Task<IEnumerable<Event>> GetTopEventsByBookingRatioAsync()
         {
             var currentDate = DateOnly.FromDateTime(DateTime.Now);

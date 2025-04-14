@@ -14,6 +14,7 @@ namespace EventManagementSystem.Interface
         Task<IEnumerable<Event>> GetTopEventsByBookingRatioAsync();
         void SetTotalTickets(Event eventEntity, int totalTickets);
         Task<IEnumerable<Event>> GetEventsByIdsAsync(List<Guid> eventIds);
+        Task<IEnumerable<Event>> GetPastEventsWithoutFeedbackAsync(string userId);
         Task<IEnumerable<Event>> GetEventsByOrganizerIdAsync(string organizerId);
     }
 }

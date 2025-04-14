@@ -184,6 +184,32 @@
   },
   {
     "ContainingType": "EventManagementSystem.Controllers.EventController",
+    "Method": "GetPastEventsWithoutFeedback",
+    "RelativePath": "api/Event/past-events-without-feedback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EventManagementSystem.Models.Dtos.PastEventFeedbackCheckRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventManagementSystem.Models.Event, EventManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EventManagementSystem.Controllers.EventController",
     "Method": "GetTopEventsByBookingRatio",
     "RelativePath": "api/Event/top-events",
     "HttpMethod": "GET",

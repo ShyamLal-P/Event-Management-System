@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using EventManagementSystem.Interface;
 using Microsoft.AspNetCore.Authorization;
+using EventManagementSystem.Models.Dtos;
 
 namespace EventManagementSystem.Controllers
 {
@@ -105,6 +106,17 @@ namespace EventManagementSystem.Controllers
 
             await _eventRepository.UpdateEventAsync(existingEvent);
             return NoContent();
+        }
+
+        [Authorize(Roles = "User, Admin")]
+        [HttpPost("past-events-without-feedback")]
+        public async Task<ActionResult<IEnumerable<Event>>> GetPastEventsWithoutFeedback([FromBody] PastEventFeedbackCheckRequestDto request)
+        {
+            if (string.IsNullOrEmpty(request.UserId))
+                return BadRequest("UserId is required.");
+
+            var events = await _eventRepository.GetPastEventsWithoutFeedbackAsync(request.UserId);
+            return Ok(events);
         }
 
         /// <summary>
