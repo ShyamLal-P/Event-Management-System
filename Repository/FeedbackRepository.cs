@@ -23,6 +23,10 @@ namespace EventManagementSystem.Repository
         {
             return await _context.Feedbacks.FindAsync(id);
         }
+        public async Task<IEnumerable<Feedback>> GetFeedbacksByEventIdAsync(Guid eventId) // New method
+        {
+            return await _context.Feedbacks.Where(f => f.EventId == eventId).ToListAsync();
+        }
 
         public async Task AddFeedbackAsync(Feedback feedbackItem)
         {

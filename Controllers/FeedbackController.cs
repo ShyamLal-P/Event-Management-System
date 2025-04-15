@@ -10,10 +10,10 @@ using Microsoft.AspNetCore.Authorization;
 using EventManagementSystem.Interface;
 using EventManagementSystem.Services;
 using System.Security.Claims;
+using EventManagementSystem.Models.Dtos;
 
 namespace EventManagementSystem.Controllers
 {
-
     [Route("api/[controller]")]
     [ApiController]
     public class FeedbackController : ControllerBase
@@ -48,6 +48,20 @@ namespace EventManagementSystem.Controllers
             return Ok(feedbackItem);
         }
 
+        // GET: api/Feedback/User/{userId}
+        [Authorize(Roles = "User, Admin")]
+        [HttpPost("GetByEventId")]
+        public async Task<ActionResult<IEnumerable<Feedback>>> GetFeedbacksByEventId([FromBody] EventIdRequest eventIdRequest)
+        {
+            var feedbacks = await _feedbackRepository.GetFeedbacksByEventIdAsync(eventIdRequest.EventId);
+            if (feedbacks == null || !feedbacks.Any())
+            {
+                return NotFound();
+            }
+            return Ok(feedbacks);
+        }
+
+        // POST: api/Feedback
         [Authorize(Roles = "User, Admin")]
         [HttpPost]
         public async Task<IActionResult> PostFeedback([FromBody] Feedback feedback)

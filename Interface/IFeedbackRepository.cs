@@ -7,7 +7,7 @@ namespace EventManagementSystem.Interface
         Task<IEnumerable<Feedback>> GetAllFeedbacksAsync();
         Task<Feedback> GetFeedbackByIdAsync(Guid id);
         Task AddFeedbackAsync(Feedback feedbackItem);
-
+        Task<IEnumerable<Feedback>> GetFeedbacksByEventIdAsync(Guid eventId);
         Task UpdateFeedbackAsync(Feedback feedbackItem);
         Task DeleteFeedbackAsync(Guid id);
         bool FeedbackExists(Guid id);
