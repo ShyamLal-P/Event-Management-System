@@ -16,6 +16,11 @@ Create a file named `appsettings.json` in the root directory of your project and
 
 ```json
 {
+    "JWT": {
+    "Key": "qwertyuiopasdfghjklzsssxcvbnm123456",
+    "Issuer": "https://mysite.io",
+    "Audience": "https://app.mysite.io"
+    },
     "Logging": {
         "LogLevel": {
             "Default": "Information",
